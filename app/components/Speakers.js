@@ -61,7 +61,7 @@ export default function Speakers() {
           className="inline-flex items-center text-cfa-bright-blue hover:text-cfa-dark-blue font-semibold text-sm transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-cfa-bright-blue focus:ring-offset-2 rounded-md px-2 py-1 -mx-2"
           aria-label={`Learn more about ${speaker.name}`}
         >
-          Read More
+          View Bio
           <svg className="ml-1 w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
