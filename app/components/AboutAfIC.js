@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function AboutAfIC() {
   return (
-    <section className="relative bg-cfa-dark-blue py-16 sm:py-20 lg:py-24 overflow-hidden" role="region" aria-label="About AfIC 2025">
+    <section className="relative bg-white py-16 sm:py-20 lg:py-24 overflow-hidden" role="region" aria-label="About AfIC 2025">
       {/* Geometric Background Elements */}
       <div className="absolute inset-0" aria-hidden="true">
         {/* Large geometric shape - top right */}
@@ -25,21 +25,21 @@ export default function AboutAfIC() {
           {/* Left Column - Content */}
           <div className="text-white order-2 lg:order-1">
             <div className="max-w-xl">
-              <h2 className="display-headline text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-bold mb-6 sm:mb-8 leading-tight">
+              <h2 className="display-headline text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-bold mb-6 sm:mb-8 leading-tight text-cfa-bright-blue">
                 Africa investing in Africa
                 <span className="block text-cfa-bright-blue">Solutions to Challenges</span>
               </h2>
               
               <div className="space-y-4 sm:space-y-6 mb-8 sm:mb-10">
-                <p className="body-copy text-base sm:text-lg leading-relaxed text-gray-200">
-                  Welcome to the <strong className="text-white font-semibold">2nd Africa Investment Conference (AfIC) 2025</strong> happening at 
-                  Movenpick, Nairobi, Kenya on <strong className="text-cfa-bright-blue">December 10th-11th</strong> following the 
+                <p className="body-copy text-base sm:text-lg leading-relaxed text-black">
+                  Welcome to the <strong className="text-black font-semibold">2nd Africa Investment Conference (AfIC) 2025</strong> happening at 
+                  Movenpick, Nairobi, Kenya on <strong className="text-black">December 10th-11th</strong> following the 
                   Inaugural conference that took place in Nigeria in 2023.
                 </p>
                 
-                <p className="body-copy text-base sm:text-lg leading-relaxed text-gray-200">
-                  This year's event is hosted by <strong className="text-white">CFA Society EA</strong>, in partnership with the 
-                  <strong className="text-white"> CFA Institute</strong>, in collaboration with all African societies including 
+                <p className="body-copy text-base sm:text-lg leading-relaxed text-black">
+                  This year's event is hosted by <strong className="text-black">CFA Society EA</strong>, in partnership with the 
+                  <strong className="text-black"> CFA Institute</strong>, in collaboration with all African societies including 
                   CFA Society South Africa, CFA Society Mauritius, CFA Society Nigeria, CFA Society Egypt and CFA Society Ghana.
                 </p>
               </div>
