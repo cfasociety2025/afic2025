@@ -60,7 +60,7 @@ export default function AboutAfIC() {
           <div className="order-1 lg:order-2">
             <div className="w-full max-w-2xl mx-auto">
               <Image
-                src="/afic8.png"
+                src="/afic17.png"
                 alt="AfIC 2023 Inaugural Conference - Lagos, Nigeria"
                 width={700}
                 height={525}
