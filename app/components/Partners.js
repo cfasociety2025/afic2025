@@ -10,7 +10,7 @@ export default function Partners() {
       url: "https://www.cfasociety.org/eastafrica"
     },
     {
-      type: "With Support From", 
+      type: "Powered by", 
       name: "CFA Institute",
       logo: "/CFA Institute.png",
       url: "https://www.cfainstitute.org"
@@ -100,10 +100,10 @@ export default function Partners() {
           <h2 className="display-headline text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-cfa-dark-blue mb-4 sm:mb-6">
             Partners
           </h2>
-          <p className="body-copy text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
+          {/* <p className="body-copy text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
             AfIC 2025 is proudly hosted by CFA Society East Africa in collaboration with 
             CFA Institute and CFA societies across the continent.
-          </p>
+          </p> */}
         </div>
 
         {/* Hosting Partners */}
@@ -121,9 +121,9 @@ export default function Partners() {
             <h3 className="section-header text-xl sm:text-2xl lg:text-3xl text-cfa-dark-blue mb-2 sm:mb-3">
               In Partnership With
             </h3>
-            <p className="body-copy text-sm sm:text-base text-gray-600">
+            {/* <p className="body-copy text-sm sm:text-base text-gray-600">
               CFA Societies across Africa
-            </p>
+            </p> */}
           </div>
           
           <div className="grid gap-4 sm:gap-6 lg:gap-8 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 max-w-6xl mx-auto">

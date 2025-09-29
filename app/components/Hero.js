@@ -53,7 +53,7 @@ export default function Hero() {
           {/* Left Column - Event Image */}
           <div className="text-white order-1 lg:order-1">
             {/* Event Image Container */}
-            <div className="border border-white/30 p-4 sm:p-6 lg:p-8 mb-6 sm:mb-8 backdrop-blur-sm rounded-lg">
+            <div className="border border-white/30 p-4 sm:p-6 lg:p-8 mb-6 sm:mb-8 backdrop-blur-xs ">
               <div className="hero-image-container w-full">
                 <Image
                   src="/overlayhero.png"
@@ -68,48 +68,50 @@ export default function Hero() {
 
             {/* Countdown Timer */}
             <div className="text-center">
-              <p className="text-white/90 text-base sm:text-lg lg:text-xl mb-6 font-medium">
+              <p className="text-white/90 text-sm sm:text-base lg:text-lg mb-4 font-medium">
                 See you in
               </p>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
-                <div className="text-center">
-                  <div className="bg-white rounded-lg p-4 sm:p-5 lg:p-6  mb-2">
-                    <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black">
-                      {timeLeft.days}
+              <div className="max-w-sm mx-auto">
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-6">
+                  <div className="text-center">
+                    <div className="bg-white  p-2 sm:p-3 lg:p- mb-2 shadow-sm">
+                      <div className="text-md sm:text-lg lg:text-xl font-bold text-black">
+                        {timeLeft.days}
+                      </div>
+                    </div>
+                    <div className="text-xs uppercase tracking-wider text-white/80 font-medium">
+                      Days
                     </div>
                   </div>
-                  <div className="text-xs sm:text-sm uppercase tracking-wider text-white/80 font-medium">
-                    Days
-                  </div>
-                </div>
-                <div className="text-center">
-                  <div className="bg-white rounded-lg p-4 sm:p-5 lg:p-6  mb-2">
-                    <div className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-black">
-                      {timeLeft.hours}
+                  <div className="text-center">
+                  <div className="bg-white  p-2 sm:p-3 lg:p- mb-2 shadow-sm">
+                  <div className="text-md sm:text-lg lg:text-xl font-bold text-black">
+                        {timeLeft.hours}
+                      </div>
+                    </div>
+                    <div className="text-xs uppercase tracking-wider text-white/80 font-medium">
+                      Hours
                     </div>
                   </div>
-                  <div className="text-xs sm:text-sm uppercase tracking-wider text-white/80 font-medium">
-                    Hours
-                  </div>
-                </div>
-                <div className="text-center">
-                  <div className="bg-white rounded-lg p-4 sm:p-5 lg:p-6  mb-2">
-                    <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black">
-                      {timeLeft.minutes}
+                  <div className="text-center">
+                  <div className="bg-white  p-2 sm:p-3 lg:p- mb-2 shadow-sm">
+                  <div className="text-md sm:text-lg lg:text-xl font-bold text-black">
+                        {timeLeft.minutes}
+                      </div>
+                    </div>
+                    <div className="text-xs uppercase tracking-wider text-white/80 font-medium">
+                      Mins
                     </div>
                   </div>
-                  <div className="text-xs sm:text-sm uppercase tracking-wider text-white/80 font-medium">
-                    Mins
-                  </div>
-                </div>
-                <div className="text-center">
-                  <div className="bg-white rounded-lg p-4 sm:p-5 lg:p-6  mb-2">
-                    <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black">
-                      {timeLeft.seconds}
+                  <div className="text-center">
+                  <div className="bg-white  p-2 sm:p-3 lg:p- mb-2 shadow-sm">
+                  <div className="text-md sm:text-lg lg:text-xl font-bold text-black">
+                        {timeLeft.seconds}
+                      </div>
                     </div>
-                  </div>
-                  <div className="text-xs sm:text-sm uppercase tracking-wider text-white/80 font-medium">
-                    Secs
+                    <div className="text-xs uppercase tracking-wider text-white/80 font-medium">
+                      Secs
+                    </div>
                   </div>
                 </div>
               </div>
@@ -153,15 +155,15 @@ export default function Hero() {
 
         {/* Statistics Section */}
         <div className="grid grid-cols-3 gap-3 sm:gap-4 lg:gap-8 mt-8 sm:mt-12 lg:mt-16">
-          <div className="text-center text-white border border-white/20 p-3 sm:p-4 lg:p-6 backdrop-blur-sm rounded-lg">
-            <div className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-1 sm:mb-2" aria-label="Over 300 participants">300+</div>
+          <div className="text-center text-white border border-white/20 p-3 sm:p-4 lg:p-6 backdrop-blur-xs ">
+            <div className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-1 sm:mb-2" aria-label="Over 500 participants">300+</div>
             <div className="text-xs sm:text-sm uppercase tracking-wider text-gray-300">PARTICIPANTS</div>
           </div>
-          <div className="text-center text-white border border-white/20 p-3 sm:p-4 lg:p-6 backdrop-blur-sm rounded-lg">
+          <div className="text-center text-white border border-white/20 p-3 sm:p-4 lg:p-6 backdrop-blur-xs ">
             <div className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-1 sm:mb-2" aria-label="Over 25 speakers">25+</div>
             <div className="text-xs sm:text-sm uppercase tracking-wider text-gray-300">SPEAKERS</div>
           </div>
-          <div className="text-center text-white border border-white/20 p-3 sm:p-4 lg:p-6 backdrop-blur-sm rounded-lg">
+          <div className="text-center text-white border border-white/20 p-3 sm:p-4 lg:p-6 backdrop-blur-xs ">
             <div className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-1 sm:mb-2" aria-label="2 days">02</div>
             <div className="text-xs sm:text-sm uppercase tracking-wider text-gray-300">DAYS</div>
           </div>

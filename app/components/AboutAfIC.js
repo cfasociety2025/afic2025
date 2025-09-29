@@ -25,9 +25,9 @@ export default function AboutAfIC() {
           {/* Left Column - Content */}
           <div className="text-white order-2 lg:order-1">
             <div className="max-w-xl">
-              <h2 className="display-headline text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 sm:mb-8 leading-tight">
-                A conference that 
-                <span className="block text-cfa-bright-blue">grows with you</span>
+              <h2 className="display-headline text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-bold mb-6 sm:mb-8 leading-tight">
+                Africa investing in Africa
+                <span className="block text-cfa-bright-blue">Solutions to Challenges</span>
               </h2>
               
               <div className="space-y-4 sm:space-y-6 mb-8 sm:mb-10">

@@ -1,4 +1,8 @@
 import Navbar from '../components/Navbar';
+import SponsorshipHero from '../components/SponsorshipHero';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
+import Image from 'next/image';
 
 export default function Sponsorship() {
   return (
@@ -6,84 +10,257 @@ export default function Sponsorship() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-cfa-dark-blue via-cfa-bright-blue/20 to-cfa-dark-blue py-16 sm:py-20 lg:py-24 overflow-hidden" role="region" aria-label="Sponsorship Opportunities">
-        {/* Background overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-cfa-dark-blue/95 to-cfa-dark-blue/80" aria-hidden="true"></div>
-        
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
-            
-            {/* Left Column - Content */}
-            <div className="order-2 lg:order-1">
-              <div className="space-y-6 sm:space-y-8">
-                <h1 className="display-headline text-3xl sm:text-4xl lg:text-5xl text-white leading-tight">
-                  Partner with Africa's Premier Investment Conference
-                </h1>
-                
-                <div className="space-y-4 sm:space-y-6">
-                  <p className="body-copy text-base sm:text-lg leading-relaxed text-gray-200">
-                    Join leading global institutions in supporting Africa's financial transformation. Position your brand alongside 300+ finance leaders, investors, and innovators shaping the continent's economic future.
-                  </p>
-                  <p className="body-copy text-base sm:text-lg leading-relaxed text-gray-200">
-                    From thought leadership platforms to executive networking opportunities, our sponsorship packages offer unparalleled access to Africa's most influential investment community.
-                  </p>
-                </div>
+      <SponsorshipHero />
 
-                <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
-                  <a
-                    href="#packages"
-                    className="bg-white text-black px-8 py-4 font-bold uppercase tracking-wider text-sm hover:bg-gray-100 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white focus:ring-offset-cfa-dark-blue min-h-[48px] flex items-center justify-center border border-white"
-                    aria-label="View sponsorship packages"
-                  >
-                    View Packages
-                  </a>
-                  <a
-                    href="/contact"
-                    className="border-2 border-white text-white px-8 py-4 font-bold uppercase tracking-wider text-sm hover:bg-white hover:text-cfa-dark-blue transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white focus:ring-offset-cfa-dark-blue min-h-[48px] flex items-center justify-center"
-                    aria-label="Contact for custom sponsorship"
-                  >
-                    Custom Package
-                  </a>
-                </div>
+      {/* Sponsorship Content Section */}
+      <section className="py-12 sm:py-16 lg:py-20 bg-white" role="region" aria-label="Sponsorship Opportunities">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          {/* Section Header */}
+          <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+            <h2 className="display-headline text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-black mb-4 sm:mb-6">
+              Sponsorship Packages
+            </h2>
+            <div className="w-16 sm:w-20 h-1 bg-black mx-auto mb-4 sm:mb-6"></div>
+            <p className="body-copy text-base sm:text-lg text-gray-800 max-w-3xl mx-auto">
+              Partner with Africa's premier investment conference and position your brand alongside 500+ finance leaders, investors, and innovators.
+            </p>
+          </div>
+
+          {/* Premium Tier Packages - Alternating image and details rows */}
+          <div className="mb-16">
+            {/* <h3 className="section-header text-2xl sm:text-3xl text-black mb-8 text-center">
+              Premium Sponsorship Tiers
+            </h3> */}
+
+            {/* Diamond */}
+            <div className="grid lg:grid-cols-2 gap-8 items-center py-8 border-b border-gray-200">
+              <div className="order-1">
+                <h4 className="section-header text-2xl text-black mb-4">Diamond Sponsor</h4>
+                <ul className="body-copy text-black mb-4 space-y-1">
+                  <li>10 VIP Passes</li>
+                  <li>Host Gala Dinner or Flagship Investment Lab</li>
+                  <li>1 Spot Available</li>
+                </ul>
+                <p className="body-copy text-gray-800 max-w-xl mb-6">
+                  Premier visibility on all stages, program, website, and media walls. Includes Opening Keynote or
+                  Featured Fireside Chat, premium booth, PR and media interview, plus a 3-minute feature video.
+                </p>
+                <a href="#contact" className="inline-block bg-black text-white px-6 py-3 font-semibold hover:bg-gray-900 transition-colors rounded-none">Sponsor Now</a>
+              </div>
+              <div className="order-2">
+                <Image src="/diamondd.png" alt="Diamond Sponsorship" width={1200} height={800} className="w-full h-96 object-cover" />
               </div>
             </div>
 
-            {/* Right Column - Visual */}
-            <div className="order-1 lg:order-2">
-              <div className="bg-gradient-to-br from-white/10 via-white/5 to-transparent backdrop-blur-sm border border-white/20 p-8 sm:p-12 lg:p-16 flex flex-col items-center justify-center text-center min-h-[300px] sm:min-h-[400px]">
-                <div className="w-20 h-20 sm:w-24 sm:h-24 bg-white rounded-full flex items-center justify-center mb-6">
-                  <span className="text-cfa-dark-blue font-bold text-lg sm:text-xl">AfIC</span>
-                </div>
-                <h3 className="section-header text-xl sm:text-2xl text-white mb-3">
-                  Africa Investment Conference 2025
-                </h3>
-                <p className="body-copy text-sm sm:text-base text-gray-300 mb-4">
-                  Premier Sponsorship Opportunity
+            {/* Platinum */}
+            <div className="grid lg:grid-cols-2 gap-8 items-center py-8 border-b border-gray-200">
+              <div className="order-2 lg:order-1">
+                <Image src="/platinum.jpeg" alt="Platinum Sponsorship" width={1200} height={800} className="w-full h-96 object-cover" />
+              </div>
+              <div className="order-1 lg:order-2">
+                <h4 className="section-header text-2xl text-black mb-4">Platinum Sponsor</h4>
+                <ul className="body-copy text-black mb-4 space-y-1">
+                  <li>8 VIP Passes</li>
+                  <li>Host Gala Dinner or Investment Lab</li>
+                  <li>1 Spot Available</li>
+                </ul>
+                <p className="body-copy text-gray-800 max-w-xl mb-6">
+                  Top-tier visibility with stage, program, and media wall branding. Keynote or high-level fireside chat,
+                  premium exhibition booth, continent-wide PR, plus a 2-minute promo video in plenary.
                 </p>
-                <div className="space-y-2 text-sm text-gray-400">
-                  <p>300+ Finance Leaders</p>
-                  <p>15+ African Countries</p>
-                  <p>2 Days of Excellence</p>
-                </div>
+                <a href="#contact" className="inline-block bg-black text-white px-6 py-3 font-semibold hover:bg-gray-900 transition-colors rounded-none">Sponsor Now</a>
+              </div>
+            </div>
+
+            {/* Gold */}
+            <div className="grid lg:grid-cols-2 gap-8 items-center py-8 border-b border-gray-200">
+              <div className="order-1">
+                <h4 className="section-header text-2xl text-black mb-4">Gold Sponsor</h4>
+                <ul className="body-copy text-black mb-4 space-y-1">
+                  <li>6 Passes</li>
+                  <li>Host Networking Cocktail</li>
+                  <li>1 Spot Available</li>
+                </ul>
+                <p className="body-copy text-gray-800 max-w-xl mb-6">
+                  Prominent logo placement across program and signage. Panel speaking opportunity, standard booth,
+                  website and social promotion, plus a 30-second brand reel during the program.
+                </p>
+                <a href="#contact" className="inline-block bg-black text-white px-6 py-3 font-semibold hover:bg-gray-900 transition-colors rounded-none">Sponsor Now</a>
+              </div>
+              <div className="order-2">
+                <Image src="/gold.png" alt="Gold Sponsorship" width={1200} height={800} className="w-full h-96 object-cover" />
+              </div>
+            </div>
+
+            {/* Silver */}
+            <div className="grid lg:grid-cols-2 gap-8 items-center py-8">
+              <div className="order-2 lg:order-1">
+                <Image src="/silver.png" alt="Silver Sponsorship" width={1200} height={800} className="w-full h-96 object-cover" />
+              </div>
+              <div className="order-1 lg:order-2">
+                <h4 className="section-header text-2xl text-black mb-4">Silver Sponsor</h4>
+                <ul className="body-copy text-black mb-4 space-y-1">
+                  <li>4 Passes</li>
+                  <li>Introduce a Speaker or Session</li>
+                  <li>1 Spot Available</li>
+                </ul>
+                <p className="body-copy text-gray-800 max-w-xl mb-6">
+                  Logo placement on event website and program, shared exhibition table, and targeted social visibility.
+                </p>
+                <a href="#contact" className="inline-block bg-black text-white px-6 py-3 font-semibold hover:bg-gray-900 transition-colors rounded-none">Sponsor Now</a>
               </div>
             </div>
           </div>
+
+          {/* Special Sponsorship Options */}
+          <div className="mb-16">
+            <h3 className="section-header text-2xl sm:text-3xl text-black mb-8 text-center">
+              Special Sponsorship Opportunities
+            </h3>
+            
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {/* Gala Dinner Sponsorship */}
+              <div className="bg-white border border-gray-200 p-6 shadow-md">
+                <div className="aspect-[4/3] overflow-hidden mb-4">
+                  <Image src="/gala.png" alt="Gala Dinner Sponsorship" width={600} height={450} className="w-full h-full object-cover" />
+                </div>
+                <h4 className="section-header text-lg text-black mb-3">
+                  Gala Dinner Sponsorship
+                </h4>
+                <div className="space-y-2 mb-4 text-black text-sm">
+                  <p className="flex items-center"><span className="text-cfa-bright-blue mr-2">✓</span> Exclusive Branding at Gala Dinner</p>
+                  <p className="flex items-center"><span className="text-cfa-bright-blue mr-2">✓</span> Stage Recognition & Backdrop Visibility</p>
+                  <p className="flex items-center"><span className="text-cfa-bright-blue mr-2">✓</span> Cultural Program Branding</p>
+                </div>
+                <a href="#contact" className="w-full inline-block text-center bg-black text-white px-4 py-2 font-medium hover:bg-gray-900 transition-colors duration-200 rounded-none text-sm">
+                  Learn More
+                </a>
+              </div>
+
+              {/* Panel Sponsorship */}
+              <div className="bg-white border border-gray-200 p-6 shadow-md">
+                <div className="aspect-[4/3] overflow-hidden mb-4">
+                  <Image src="/panel.JPG" alt="Panel Sponsorship" width={600} height={450} className="w-full h-full object-cover" />
+                </div>
+                <h4 className="section-header text-lg text-black mb-3">
+                  Panel / Track Sponsorship
+                </h4>
+                <div className="space-y-2 mb-4 text-black text-sm">
+                  <p className="flex items-center"><span className="text-cfa-bright-blue mr-2">✓</span> Branding as "Panel Presented by [Your Brand]"</p>
+                  <p className="flex items-center"><span className="text-cfa-bright-blue mr-2">✓</span> Speaking Role for a Senior Executive</p>
+                  <p className="flex items-center"><span className="text-cfa-bright-blue mr-2">✓</span> Logo Placement in Agenda</p>
+                </div>
+                <a href="#contact" className="w-full inline-block text-center bg-black text-white px-4 py-2 font-medium hover:bg-gray-900 transition-colors duration-200 rounded-none text-sm">
+                  Learn More
+                </a>
+              </div>
+
+              {/* Delegate Bag Sponsorship */}
+              <div className="bg-white border border-gray-200 p-6 shadow-md">
+                <div className="aspect-[4/3] overflow-hidden mb-4">
+                  <Image src="/lanyard.png" alt="Delegate Bag or Lanyard Sponsorship" width={600} height={450} className="w-full h-full object-cover" />
+                </div>
+                <h4 className="section-header text-lg text-black mb-3">
+                  Delegate Bag / Lanyard Sponsorship
+                </h4>
+                <div className="space-y-2 mb-4 text-black text-sm">
+                  <p className="flex items-center"><span className="text-cfa-bright-blue mr-2">✓</span> Logo on Delegate Bags or Lanyards</p>
+                  <p className="flex items-center"><span className="text-cfa-bright-blue mr-2">✓</span> Continuous Visibility with Every Participant</p>
+                </div>
+                <a href="#contact" className="w-full inline-block text-center bg-black text-white px-4 py-2 font-medium hover:bg-gray-900 transition-colors duration-200 rounded-none text-sm">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Table Sponsorship Options */}
+          <div className="mb-12">
+            <h3 className="section-header text-2xl sm:text-3xl text-black mb-8 text-center">
+              Table Sponsorship Options
+            </h3>
+            
+            <div className="grid gap-6 lg:grid-cols-3">
+              {/* Table Sponsorship 1 */}
+              <div className="bg-white border border-gray-200 p-6 shadow-md">
+                <div className="aspect-[4/3] overflow-hidden  mb-4">
+                  <Image
+                    src="/Table 1.png"
+                    alt="Conference Days Table Sponsorship"
+                    width={400}
+                    height={300}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h4 className="section-header text-lg text-black mb-3">
+                  Conference Days 1 & 2
+                </h4>
+                <p className="body-copy text-sm text-gray-800 mb-4">
+                  Bundled Discount Package - Enjoy special savings with a bundled table sponsorship covering both conference days.
+                </p>
+                <a href="#contact" className="w-full inline-block text-center bg-black text-white px-4 py-2 font-medium hover:bg-gray-900 transition-colors duration-200 rounded-none text-sm">
+                  Sponsor Table
+                </a>
+              </div>
+
+              {/* Table Sponsorship 2 */}
+              <div className="bg-white border border-gray-200 p-6 shadow-md">
+                <div className="aspect-[4/3] overflow-hidden  mb-4">
+                  <Image
+                    src="/table 2.png"
+                    alt="Conference + Gala Dinner Table Sponsorship"
+                    width={400}
+                    height={300}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h4 className="section-header text-lg text-black mb-3">
+                  Conference + Gala Dinner
+                </h4>
+                <p className="body-copy text-sm text-gray-800 mb-4">
+                  Flagship Hosting Bundle - Gain recognition across both conference days and the Gala Dinner.
+                </p>
+                <a href="#contact" className="w-full inline-block text-center bg-black text-white px-4 py-2 font-medium hover:bg-gray-900 transition-colors duration-200 rounded-none text-sm">
+                  Sponsor Table
+                </a>
+              </div>
+
+              {/* Table Sponsorship 3 */}
+              <div className="bg-white border border-gray-200 p-6 shadow-md">
+                <div className="aspect-[4/3] overflow-hidden  mb-4">
+                  <Image
+                    src="/table 3.png"
+                    alt="Full Participation Table Sponsorship"
+                    width={400}
+                    height={300}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h4 className="section-header text-lg text-black mb-3">
+                  Full Participation
+                </h4>
+                <p className="body-copy text-sm text-gray-800 mb-4">
+                  VIP Tables at Conference Days, Gala & Cocktail - Ultimate visibility with premium logo placement.
+                </p>
+                <a href="#contact" className="w-full inline-block text-center bg-black text-white px-4 py-2 font-medium hover:bg-gray-900 transition-colors duration-200 rounded-none text-sm">
+                  Sponsor Table
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Call to Action */}
+         
+
         </div>
       </section>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16" role="main">
-        
-        <div className="mt-8 sm:mt-12 lg:mt-16 text-center">
-          <div className="bg-cfa-warm-white p-4 sm:p-6 lg:p-8 rounded-lg max-w-2xl mx-auto">
-            <h2 className="section-header text-xl sm:text-2xl text-cfa-dark-blue mb-3 sm:mb-4">
-              Coming Soon
-            </h2>
-            <p className="body-copy text-sm sm:text-base text-gray-700">
-              Detailed sponsorship packages and partnership opportunities will be available shortly.
-            </p>
-          </div>
-        </div>
-      </main>
+      {/* Contact Section */}
+      <Contact />
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }

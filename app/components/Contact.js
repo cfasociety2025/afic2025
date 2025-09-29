@@ -26,7 +26,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="py-16 sm:py-20 lg:py-24 bg-gray-50" role="region" aria-label="Contact Information">
+    <section id="contact" className="py-16 sm:py-20 lg:py-24 bg-gray-50" role="region" aria-label="Contact Information">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

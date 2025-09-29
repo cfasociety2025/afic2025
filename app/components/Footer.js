@@ -89,7 +89,7 @@ export default function Footer() {
                   <div className="w-16 h-1 bg-cfa-bright-blue"></div>
                 </div>
                 <p className="body-copy text-gray-300 text-sm sm:text-base leading-relaxed mb-6">
-                  Africa's premier investment conference, bringing together 300+ finance leaders to explore next-generation strategies for Africa's digital transformation.
+                Africa Investing in Africa: Solutions to Challenges
                 </p>
                 
                 {/* Event Details */}
@@ -98,7 +98,7 @@ export default function Footer() {
                     📅 December 10th -11th, 2025
                   </p>
                   <p className="body-copy text-gray-300">
-                    📍 Mövenpick Hotel & Residences, Abu Dhabi
+                    📍 Mövenpick Hotel & Residences, Nairobi, Kenya.
                   </p>
                   <p className="body-copy text-gray-300">
                     🏢 Hosted by CFA Society East Africa
@@ -184,9 +184,9 @@ export default function Footer() {
               <p className="body-copy text-sm text-gray-400">
                 © {currentYear} CFA Society East Africa. All rights reserved.
               </p>
-              <p className="body-copy text-sm text-gray-400">
+              {/* <p className="body-copy text-sm text-gray-400">
                 Tech by <span className="text-cfa-bright-blue">GlassHouse PR</span>
-              </p>
+              </p> */}
             </div>
 
             {/* Social Links */}

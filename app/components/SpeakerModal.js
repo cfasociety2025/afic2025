@@ -45,7 +45,7 @@ export default function SpeakerModal({ speaker, isOpen, onClose }) {
       <div className="flex min-h-full items-center justify-center p-4 sm:p-6 lg:p-8">
         <div 
           id="speaker-modal"
-          className="relative bg-white rounded-lg shadow-2xl max-w-2xl w-full mx-auto transform transition-all duration-300 scale-100"
+          className="relative bg-white rounded-lg shadow-2xl max-w-2xl lg:max-w-4xl xl:max-w-5xl w-full mx-auto transform transition-all duration-300 scale-100"
           tabIndex="-1"
           role="document"
         >
@@ -61,12 +61,12 @@ export default function SpeakerModal({ speaker, isOpen, onClose }) {
           </button>
 
           {/* Modal Content */}
-          <div className="p-6 sm:p-8">
-            <div className="flex flex-col sm:flex-row gap-6 sm:gap-8">
+          <div className="p-6 sm:p-8 lg:p-10 xl:p-12">
+            <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 lg:gap-12">
               
               {/* Speaker Image */}
               <div className="flex-shrink-0">
-                <div className="w-32 h-32 sm:w-40 sm:h-40 mx-auto sm:mx-0">
+                <div className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 mx-auto sm:mx-0">
                   {speaker.image ? (
                     <img
                       src={speaker.image}
@@ -99,9 +99,9 @@ export default function SpeakerModal({ speaker, isOpen, onClose }) {
                   </p>
                 )}
 
-                <div className="space-y-4 text-gray-700">
+                <div className="space-y-4 lg:space-y-6 text-gray-700">
                   {speaker.bio && (
-                    <p className="body-copy text-sm sm:text-base leading-relaxed">
+                    <p className="body-copy text-sm sm:text-base lg:text-lg leading-relaxed lg:leading-relaxed">
                       {speaker.bio}
                     </p>
                   )}

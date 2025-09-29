@@ -12,7 +12,7 @@ export default function AboutCFAEmirates() {
           {/* Left Column - Content */}
           <div className="text-white order-2 lg:order-1">
             <div className="max-w-xl">
-              <h2 className="display-headline text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 sm:mb-8 leading-tight">
+              <h2 className="display-headline text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-6 sm:mb-8 leading-tight">
                 About CFA Society East Africa
               </h2>
               <div className="w-16 sm:w-20 h-1 bg-white mb-6 sm:mb-8"></div>
@@ -45,7 +45,7 @@ Our shared mission is to promote the highest standards of ethical and profession
           <div className="order-1 lg:order-2">
             <div className="w-full max-w-2xl mx-auto">
               <Image
-                src="/afic2.png"
+                src="/afic3.png"
                 alt="Africa Investment Conference East Africa Event"
                 width={700}
                 height={525}
