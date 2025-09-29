@@ -57,7 +57,7 @@ export default function Hero() {
             <div className="border border-white/30 p-4 sm:p-6 lg:p-8 mb-6 sm:mb-8 backdrop-blur-xs ">
               <div className="hero-image-container w-full">
                 <Image
-                  src="/overlayhero.png"
+                  src="/herooverlay.png"
                   alt="Africa Investment Conference 2025 - 1st Edition"
                   width={600}
                   height={400}

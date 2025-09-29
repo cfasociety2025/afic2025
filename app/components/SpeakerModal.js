@@ -66,15 +66,15 @@ export default function SpeakerModal({ speaker, isOpen, onClose }) {
               
               {/* Speaker Image */}
               <div className="flex-shrink-0">
-                <div className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 mx-auto sm:mx-0">
+                <div className="w-40 h-40 sm:w-48 sm:h-48 lg:w-56 lg:h-56 xl:w-64 xl:h-64 mx-auto sm:mx-0 bg-white rounded-lg shadow-lg flex items-center justify-center">
                   {speaker.image ? (
                     <img
                       src={speaker.image}
                       alt={`${speaker.name} - Speaker at AfIC 2025`}
-                      className="w-full h-full object-cover rounded-lg shadow-lg"
+                      className="w-full h-full object-contain rounded-lg"
                     />
                   ) : (
-                    <div className="w-full h-full bg-gradient-to-br from-cfa-dark-blue to-cfa-bright-blue rounded-lg flex items-center justify-center shadow-lg">
+                    <div className="w-full h-full bg-gradient-to-br from-cfa-dark-blue to-cfa-bright-blue rounded-lg flex items-center justify-center">
                       <span className="text-white font-bold text-2xl sm:text-3xl">
                         {speaker.name.split(' ').map(n => n[0]).join('')}
                       </span>
