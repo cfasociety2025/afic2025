@@ -31,7 +31,7 @@ export default function SponsorshipHero() {
           <div className="order-1 lg:order-2">
             <div className="w-full max-w-2xl mx-auto">
               <Image
-                src="/afic6.png"
+                src="/afic13.png"
                 alt="Africa Investment Conference Sponsorship Opportunities"
                 width={700}
                 height={525}

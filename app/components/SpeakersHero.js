@@ -73,7 +73,7 @@ export default function SpeakersHero() {
         <div className="order-1 lg:order-2">
           <div className="w-full max-w-2xl mx-auto">
             <Image
-              src="/afic4.png"
+              src="/afic14.png"
               alt="Africa Investment Conference East Africa Event"
               width={700}
               height={525}
