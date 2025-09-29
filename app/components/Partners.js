@@ -26,7 +26,7 @@ export default function Partners() {
     { 
       name: "CFA Society South Africa", 
       logo: "/Society_South-Africa_RGB.png", 
-      url: "https://www.cfasociety.org/south-africa" 
+      url: "https://www.cfasociety.org/southafrica" 
     },
     { 
       name: "CFA Society Mauritius", 
