@@ -17,7 +17,7 @@ export default function Footer() {
       { name: 'CFA Society East Africa', href: 'https://www.cfasociety.org/eastafrica', external: true },
       { name: 'CFA Society Mauritius', href: 'https://www.cfasociety.org/mauritius', external: true },
       { name: 'CFA Society Nigeria', href: 'https://www.cfasociety.org/nigeria', external: true },
-      { name: 'CFA Society South Africa', href: 'https://www.cfasociety.org/south-africa', external: true },
+      { name: 'CFA Society South Africa', href: 'https://www.cfasociety.org/southafrica', external: true },
       { name: 'CFA Society Egypt', href: 'https://www.cfasociety.org/egypt', external: true },
       { name: 'CFA Society Ghana', href: 'https://www.cfasociety.org/ghana', external: true }    ],
       
