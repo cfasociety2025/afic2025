@@ -45,7 +45,7 @@ Our shared mission is to promote the highest standards of ethical and profession
           <div className="order-1 lg:order-2">
             <div className="w-full max-w-2xl mx-auto">
               <Image
-                src="/afic9.png"
+                src="/afic10.png"
                 alt="Africa Investment Conference East Africa Event"
                 width={700}
                 height={525}
