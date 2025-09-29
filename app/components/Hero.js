@@ -107,13 +107,13 @@ export default function Hero() {
               >
                 Buy Tickets
               </Link>
-              {/* <Link
+              <Link
                 href="/sponsorship"
                 className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 font-bold text-center hover:bg-white hover:text-cfa-dark-blue transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white min-h-[44px] flex items-center justify-center"
                 aria-label="Learn about sponsorship opportunities"
               >
                 Sponsor now
-              </Link> */}
+              </Link>
             </div>
           </div>
         </div>
