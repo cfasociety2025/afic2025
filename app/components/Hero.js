@@ -74,7 +74,7 @@ export default function Hero() {
               <div className="max-w-sm mx-auto">
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-6">
                   <div className="text-center">
-                    <div className="bg-white  p-2 sm:p-3 lg:p- mb-2 shadow-sm">
+                    <div className="bg-white  p-2 sm:p-3 lg:p- mb-2 ">
                       <div className="text-md sm:text-lg lg:text-xl font-bold text-black">
                         {timeLeft.days}
                       </div>
@@ -84,7 +84,7 @@ export default function Hero() {
                     </div>
                   </div>
                   <div className="text-center">
-                  <div className="bg-white  p-2 sm:p-3 lg:p- mb-2 shadow-sm">
+                  <div className="bg-white  p-2 sm:p-3 lg:p- mb-2 ">
                   <div className="text-md sm:text-lg lg:text-xl font-bold text-black">
                         {timeLeft.hours}
                       </div>
@@ -94,7 +94,7 @@ export default function Hero() {
                     </div>
                   </div>
                   <div className="text-center">
-                  <div className="bg-white  p-2 sm:p-3 lg:p- mb-2 shadow-sm">
+                  <div className="bg-white  p-2 sm:p-3 lg:p- mb-2 ">
                   <div className="text-md sm:text-lg lg:text-xl font-bold text-black">
                         {timeLeft.minutes}
                       </div>
@@ -104,7 +104,7 @@ export default function Hero() {
                     </div>
                   </div>
                   <div className="text-center">
-                  <div className="bg-white  p-2 sm:p-3 lg:p- mb-2 shadow-sm">
+                  <div className="bg-white  p-2 sm:p-3 lg:p- mb-2 ">
                   <div className="text-md sm:text-lg lg:text-xl font-bold text-black">
                         {timeLeft.seconds}
                       </div>
@@ -156,7 +156,7 @@ export default function Hero() {
         {/* Statistics Section */}
         <div className="grid grid-cols-3 gap-3 sm:gap-4 lg:gap-8 mt-8 sm:mt-12 lg:mt-16">
           <div className="text-center text-white border border-white/20 p-3 sm:p-4 lg:p-6 backdrop-blur-xs ">
-            <div className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-1 sm:mb-2" aria-label="Over 500 participants">300+</div>
+            <div className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-1 sm:mb-2" aria-label="Over 500 participants">500+</div>
             <div className="text-xs sm:text-sm uppercase tracking-wider text-gray-300">PARTICIPANTS</div>
           </div>
           <div className="text-center text-white border border-white/20 p-3 sm:p-4 lg:p-6 backdrop-blur-xs ">
