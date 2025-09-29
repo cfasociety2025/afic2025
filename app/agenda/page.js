@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 
 export default function Agenda() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen text-[17px] sm:text-[18px] leading-relaxed">
       <Navbar />
       
       {/* Hero Section */}

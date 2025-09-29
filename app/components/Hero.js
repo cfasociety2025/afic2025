@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
+import CircularCountdown from './CircularCountdown';
 
 export default function Hero() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -71,48 +72,12 @@ export default function Hero() {
               <p className="text-white/90 text-sm sm:text-base lg:text-lg mb-4 font-medium">
                 See you in
               </p>
-              <div className="max-w-sm mx-auto">
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-6">
-                  <div className="text-center">
-                    <div className="bg-white  p-2 sm:p-3 lg:p- mb-2 ">
-                      <div className="text-md sm:text-lg lg:text-xl font-bold text-black">
-                        {timeLeft.days}
-                      </div>
-                    </div>
-                    <div className="text-xs uppercase tracking-wider text-white/80 font-medium">
-                      Days
-                    </div>
-                  </div>
-                  <div className="text-center">
-                  <div className="bg-white  p-2 sm:p-3 lg:p- mb-2 ">
-                  <div className="text-md sm:text-lg lg:text-xl font-bold text-black">
-                        {timeLeft.hours}
-                      </div>
-                    </div>
-                    <div className="text-xs uppercase tracking-wider text-white/80 font-medium">
-                      Hours
-                    </div>
-                  </div>
-                  <div className="text-center">
-                  <div className="bg-white  p-2 sm:p-3 lg:p- mb-2 ">
-                  <div className="text-md sm:text-lg lg:text-xl font-bold text-black">
-                        {timeLeft.minutes}
-                      </div>
-                    </div>
-                    <div className="text-xs uppercase tracking-wider text-white/80 font-medium">
-                      Mins
-                    </div>
-                  </div>
-                  <div className="text-center">
-                  <div className="bg-white  p-2 sm:p-3 lg:p- mb-2 ">
-                  <div className="text-md sm:text-lg lg:text-xl font-bold text-black">
-                        {timeLeft.seconds}
-                      </div>
-                    </div>
-                    <div className="text-xs uppercase tracking-wider text-white/80 font-medium">
-                      Secs
-                    </div>
-                  </div>
+              <div className="max-w-xl mx-auto">
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
+                  <CircularCountdown label="Days" value={timeLeft.days} max={365} strokeColor="#fbbf24" />
+                  <CircularCountdown label="Hours" value={timeLeft.hours} max={24} strokeColor="#93c5fd" />
+                  <CircularCountdown label="Minutes" value={timeLeft.minutes} max={60} strokeColor="#bbf7d0" />
+                  <CircularCountdown label="Seconds" value={timeLeft.seconds} max={60} strokeColor="#fecaca" />
                 </div>
               </div>
             </div>
@@ -137,18 +102,18 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-12">
               <Link
                 href="/tickets"
-                className="bg-white text-cfa-dark-blue px-6 sm:px-8 py-3 sm:py-4 font-bold text-center hover:bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white min-h-[44px] flex items-center justify-center"
+                className="bg-white text-cfa-dark-blue px-8 sm:px-12 py-3 sm:py-4 font-bold text-center hover:bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white min-h-[44px] flex items-center justify-center"
                 aria-label="Purchase conference tickets"
               >
                 Buy Tickets
               </Link>
-              <Link
+              {/* <Link
                 href="/sponsorship"
                 className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 font-bold text-center hover:bg-white hover:text-cfa-dark-blue transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white min-h-[44px] flex items-center justify-center"
                 aria-label="Learn about sponsorship opportunities"
               >
                 Sponsor now
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

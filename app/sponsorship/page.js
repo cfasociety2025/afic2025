@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export default function Sponsorship() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen text-[17px] sm:text-[18px] leading-relaxed">
       <Navbar />
       
       {/* Hero Section */}

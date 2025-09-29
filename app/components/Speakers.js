@@ -24,12 +24,12 @@ export default function Speakers() {
   const SpeakerCard = ({ speaker }) => (
     <div className="group bg-white shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-cfa-bright-blue/30">
       {/* Speaker Image */}
-      <div className="aspect-[4/3] overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200">
+      <div className="aspect-[4/3] overflow-hidden bg-white">
         {speaker.image ? (
           <img
             src={speaker.image}
             alt={`${speaker.name} - Speaker at AfIC 2025`}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            className="w-full h-full object-contain"
           />
         ) : (
           <div className="w-full h-full bg-gradient-to-br from-cfa-dark-blue to-cfa-bright-blue flex items-center justify-center group-hover:from-cfa-bright-blue group-hover:to-cfa-dark-blue transition-all duration-300">

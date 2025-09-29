@@ -171,6 +171,8 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: "Azo Sans", Arial, Helvetica, sans-serif; /* CFA brand font with fallbacks */
+  font-size: 17px; /* Slightly larger base size for readability */
+  line-height: 1.6;
 }
 
 /* Headlines - Flecha S Medium fallback to Georgia */
@@ -406,13 +408,13 @@ body {
 /* Desktop/Laptop logo optimizations */
 @media (min-width: 1024px) {
   .navbar-logo {
-    height: 48px !important; /* Larger on laptops and larger screens */
+    height: 70px !important; /* Larger on laptops and larger screens */
   }
 }
 
 @media (min-width: 1280px) {
   .navbar-logo {
-    height: 52px !important; /* Even larger on very large screens */
+    height: 70px !important; /* Even larger on very large screens */
   }
 }
 

@@ -15,9 +15,12 @@ export default function Footer() {
     partners: [
       { name: 'CFA Institute', href: 'https://www.cfainstitute.org', external: true },
       { name: 'CFA Society East Africa', href: 'https://www.cfasociety.org/eastafrica', external: true },
-      { name: 'CFA Society Emirates', href: 'https://www.cfasociety.org/emirates', external: true },
-      { name: 'CFA Society Nigeria', href: 'https://www.cfasociety.org/nigeria', external: true }
-    ],
+      { name: 'CFA Society Mauritius', href: 'https://www.cfasociety.org/mauritius', external: true },
+      { name: 'CFA Society Nigeria', href: 'https://www.cfasociety.org/nigeria', external: true },
+      { name: 'CFA Society South Africa', href: 'https://www.cfasociety.org/south-africa', external: true },
+      { name: 'CFA Society Egypt', href: 'https://www.cfasociety.org/egypt', external: true },
+      { name: 'CFA Society Ghana', href: 'https://www.cfasociety.org/ghana', external: true }    ],
+      
     resources: [
       { name: 'Contact Us', href: '/contact' },
       { name: 'Privacy Policy', href: '/privacy' },

@@ -54,7 +54,7 @@ export default function Contact() {
                 {/* Event Coordinator */}
                 <div className="bg-white p-6 shadow-md border border-gray-100 hover:border-cfa-bright-blue/30 transition-all duration-300">
                   <h4 className="body-header font-semibold text-cfa-dark-blue mb-2">
-                    CFA East Africa
+                    CFA Society East Africa
                   </h4>
                   <p className="body-copy text-gray-600 mb-2">
                    Organizing Team

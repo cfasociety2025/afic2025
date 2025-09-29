@@ -92,8 +92,8 @@ export default function Navbar() {
                   <Image
                     src="/aficdarklogo.svg"
                     alt="AfIC 2025 - Africa Investment Conference"
-                    width={120}
-                    height={40}
+                    width={200}
+                    height={70}
                     className="navbar-logo w-auto"
                     priority
                   />
