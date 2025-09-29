@@ -33,9 +33,9 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen lg:min-h-[70vh] xl:min-h-[70vh] bg-cfa-warm-white overflow-hidden" role="banner">
+    <section className="relative min-h-screen lg:min-h-[70vh] xl:min-h-[70vh] bg-cfa-warm-white overflow-hidden mt-14" role="banner">
       {/* YouTube Background Video */}
-      <div className="absolute inset-0 w-full h-full z-0 overflow-hidden bg-cfa-warm-white">
+      <div className="absolute inset-0 w-full h-full z-0 overflow-hidden bg-cfa-warm-white ">
         <iframe
           className="youtube-background"
           src="https://www.youtube.com/embed/kZJ7CxP-UIU?autoplay=1&loop=1&mute=1&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&enablejsapi=1&playlist=kZJ7CxP-UIU&vq=hd1080&start=0&end=0"
