@@ -77,7 +77,7 @@ export default function Speakers() {
           
           {/* Section Header */}
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="display-headline text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-cfa-bright-blue mb-4 sm:mb-6">
+            <h2 className="display-headline text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-cfa-bright-blue mb-4 sm:mb-6 text-cfa-dark-blue">
               Speakers
             </h2>
             <div className="w-16 sm:w-20 h-1 bg-cfa-dark-blue mx-auto mb-4 sm:mb-6"></div>

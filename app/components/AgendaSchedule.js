@@ -242,7 +242,7 @@ const AgendaPage = () => {
         </div>
 
         {/* Header */}
-        <div className="bg-blue-600 text-white px-8 py-6 flex justify-between items-center">
+        <div className="bg-cfa-bright-blue text-white px-8 py-6 flex justify-between items-center">
           <div className="text-lg font-semibold">{currentData.date}</div>
           <div className="text-lg font-semibold">Venue: {currentData.venue}</div>
         </div>

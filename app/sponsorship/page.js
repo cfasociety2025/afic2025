@@ -46,7 +46,7 @@ export default function Sponsorship() {
                   Premier visibility on all stages, program, website, and media walls. Includes Opening Keynote or
                   Featured Fireside Chat, premium booth, PR and media interview, plus a 3-minute feature video.
                 </p>
-                <a href="#contact" className="inline-block bg-black text-white px-6 py-3 font-semibold hover:bg-gray-900 transition-colors rounded-none">Sponsor Now</a>
+                <a href="#contact" className="inline-block bg-cfa-bright-blue text-white px-6 py-3 font-semibold hover:bg-gray-900 transition-colors rounded-none">Sponsor Now</a>
               </div>
               <div className="order-2">
                 <Image src="/diamondd.png" alt="Diamond Sponsorship" width={1200} height={800} className="w-full h-96 object-cover" />
@@ -69,7 +69,7 @@ export default function Sponsorship() {
                   Top-tier visibility with stage, program, and media wall branding. Keynote or high-level fireside chat,
                   premium exhibition booth, continent-wide PR, plus a 2-minute promo video in plenary.
                 </p>
-                <a href="#contact" className="inline-block bg-black text-white px-6 py-3 font-semibold hover:bg-gray-900 transition-colors rounded-none">Sponsor Now</a>
+                <a href="#contact" className="inline-block bg-cfa-bright-blue text-white px-6 py-3 font-semibold hover:bg-gray-900 transition-colors rounded-none">Sponsor Now</a>
               </div>
             </div>
 
@@ -86,7 +86,7 @@ export default function Sponsorship() {
                   Prominent logo placement across program and signage. Panel speaking opportunity, standard booth,
                   website and social promotion, plus a 30-second brand reel during the program.
                 </p>
-                <a href="#contact" className="inline-block bg-black text-white px-6 py-3 font-semibold hover:bg-gray-900 transition-colors rounded-none">Sponsor Now</a>
+                <a href="#contact" className="inline-block bg-cfa-bright-blue text-white px-6 py-3 font-semibold hover:bg-gray-900 transition-colors rounded-none">Sponsor Now</a>
               </div>
               <div className="order-2">
                 <Image src="/gold.png" alt="Gold Sponsorship" width={1200} height={800} className="w-full h-96 object-cover" />
@@ -108,7 +108,7 @@ export default function Sponsorship() {
                 <p className="body-copy text-gray-800 max-w-xl mb-6">
                   Logo placement on event website and program, shared exhibition table, and targeted social visibility.
                 </p>
-                <a href="#contact" className="inline-block bg-black text-white px-6 py-3 font-semibold hover:bg-gray-900 transition-colors rounded-none">Sponsor Now</a>
+                  <a href="#contact" className="inline-block bg-cfa-bright-blue text-white px-6 py-3 font-semibold hover:bg-gray-900 transition-colors rounded-none">Sponsor Now</a>
               </div>
             </div>
           </div>
@@ -133,8 +133,8 @@ export default function Sponsorship() {
                   <p className="flex items-center"><span className="text-cfa-bright-blue mr-2">✓</span> Stage Recognition & Backdrop Visibility</p>
                   <p className="flex items-center"><span className="text-cfa-bright-blue mr-2">✓</span> Cultural Program Branding</p>
                 </div>
-                <a href="#contact" className="w-full inline-block text-center bg-black text-white px-4 py-2 font-medium hover:bg-gray-900 transition-colors duration-200 rounded-none text-sm">
-                  Learn More
+                <a href="#contact" className="w-full inline-block text-center bg-cfa-bright-blue text-white px-4 py-2 font-medium hover:bg-gray-900 transition-colors duration-200 rounded-none text-sm">
+                  Sponsor Now
                 </a>
               </div>
 
@@ -151,8 +151,8 @@ export default function Sponsorship() {
                   <p className="flex items-center"><span className="text-cfa-bright-blue mr-2">✓</span> Speaking Role for a Senior Executive</p>
                   <p className="flex items-center"><span className="text-cfa-bright-blue mr-2">✓</span> Logo Placement in Agenda</p>
                 </div>
-                <a href="#contact" className="w-full inline-block text-center bg-black text-white px-4 py-2 font-medium hover:bg-gray-900 transition-colors duration-200 rounded-none text-sm">
-                  Learn More
+                <a href="#contact" className="w-full inline-block text-center bg-cfa-bright-blue text-white px-4 py-2 font-medium hover:bg-gray-900 transition-colors duration-200 rounded-none text-sm">
+                  Sponsor Now
                 </a>
               </div>
 
@@ -168,8 +168,8 @@ export default function Sponsorship() {
                   <p className="flex items-center"><span className="text-cfa-bright-blue mr-2">✓</span> Logo on Delegate Bags or Lanyards</p>
                   <p className="flex items-center"><span className="text-cfa-bright-blue mr-2">✓</span> Continuous Visibility with Every Participant</p>
                 </div>
-                <a href="#contact" className="w-full inline-block text-center bg-black text-white px-4 py-2 font-medium hover:bg-gray-900 transition-colors duration-200 rounded-none text-sm">
-                  Learn More
+                <a href="#contact" className="w-full inline-block text-center bg-cfa-bright-blue text-white px-4 py-2 font-medium hover:bg-gray-900 transition-colors duration-200 rounded-none text-sm">
+                  Sponsor Now
                 </a>
               </div>
             </div>
@@ -199,7 +199,7 @@ export default function Sponsorship() {
                 <p className="body-copy text-sm text-gray-800 mb-4">
                   Bundled Discount Package - Enjoy special savings with a bundled table sponsorship covering both conference days.
                 </p>
-                <a href="#contact" className="w-full inline-block text-center bg-black text-white px-4 py-2 font-medium hover:bg-gray-900 transition-colors duration-200 rounded-none text-sm">
+                <a href="#contact" className="w-full inline-block text-center bg-cfa-bright-blue text-white px-4 py-2 font-medium hover:bg-gray-900 transition-colors duration-200 rounded-none text-sm">
                   Sponsor Table
                 </a>
               </div>
@@ -221,7 +221,7 @@ export default function Sponsorship() {
                 <p className="body-copy text-sm text-gray-800 mb-4">
                   Flagship Hosting Bundle - Gain recognition across both conference days and the Gala Dinner.
                 </p>
-                <a href="#contact" className="w-full inline-block text-center bg-black text-white px-4 py-2 font-medium hover:bg-gray-900 transition-colors duration-200 rounded-none text-sm">
+                <a href="#contact" className="w-full inline-block text-center bg-cfa-bright-blue text-white px-4 py-2 font-medium hover:bg-gray-900 transition-colors duration-200 rounded-none text-sm">
                   Sponsor Table
                 </a>
               </div>
@@ -243,7 +243,7 @@ export default function Sponsorship() {
                 <p className="body-copy text-sm text-gray-800 mb-4">
                   VIP Tables at Conference Days, Gala & Cocktail - Ultimate visibility with premium logo placement.
                 </p>
-                <a href="#contact" className="w-full inline-block text-center bg-black text-white px-4 py-2 font-medium hover:bg-gray-900 transition-colors duration-200 rounded-none text-sm">
+                <a href="#contact" className="w-full inline-block text-center bg-cfa-bright-blue text-white text-white px-4 py-2 font-medium hover:bg-gray-900 transition-colors duration-200 rounded-none text-sm">
                   Sponsor Table
                 </a>
               </div>

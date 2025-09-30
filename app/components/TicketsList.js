@@ -84,7 +84,7 @@ export default function TicketsList() {
                 href="https://app.glueup.com/event/156136/register/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center bg-cfa-dark-blue text-white px-4 py-2 font-semibold hover:bg-black transition-colors"
+                className="inline-flex items-center justify-center bg-cfa-bright-blue text-white px-4 py-2 font-semibold hover:bg-black transition-colors"
                 aria-label={`Register for ${t.name} on Glue Up`}
               >
                 Register

@@ -169,7 +169,7 @@ export default function Contact() {
               <div>
                 <button
                   type="submit"
-                  className="w-full bg-black text-white px-8 py-4 font-semibold hover:bg-gray-800 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 min-h-[48px] flex items-center justify-center"
+                  className="w-full bg-cfa-bright-blue text-white px-8 py-4 font-semibold hover:bg-gray-800 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 min-h-[48px] flex items-center justify-center"
                   aria-label="Submit contact form"
                 >
                   Submit
