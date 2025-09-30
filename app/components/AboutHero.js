@@ -4,8 +4,8 @@ import Image from 'next/image';
 
 export default function AboutHero() {
   return (
-    <section className="relative bg-cfa-dark-blue py-16 sm:py-20 lg:py-24 overflow-hidden" role="region" aria-label="About AfIC">
-      <div className="absolute inset-0 bg-gradient-to-b from-blue-600/20 via-blue-800/40 to-blue-900/60" aria-hidden="true"></div>
+    <section className="relative bg-[#06005A] py-16 sm:py-20 lg:py-24 overflow-hidden" role="region" aria-label="About AfIC">
+      <div className="absolute inset-0 bg-[#08024a]" aria-hidden="true"></div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
