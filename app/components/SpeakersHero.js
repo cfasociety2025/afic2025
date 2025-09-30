@@ -32,7 +32,7 @@ export default function SpeakersHero() {
   }, []);
 
   return (
-    <section className="relative bg-gradient-to-l from-blue-600 via-blue-800 to-blue-900/90 py-16 sm:py-20 lg:py-24 overflow-hidden" role="region" aria-label="About CFA Society East Africa">
+    <section className="relative bg-cfa-dark-blue py-16 sm:py-20 lg:py-24 overflow-hidden" role="region" aria-label="About CFA Society East Africa">
     {/* Background overlay for depth */}
     <div className="absolute inset-0 bg-gradient-to-b from-blue-600/20 via-blue-800/40 to-blue-900/60" aria-hidden="true"></div>
     
