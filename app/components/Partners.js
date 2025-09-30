@@ -20,7 +20,7 @@ export default function Partners() {
   const cfaPartners = [
     { 
       name: "CFA Society Nigeria", 
-      logo: "/Society_Nigeria_RGB.png", 
+      logo: "/cfangn.png", 
       url: "https://www.cfasociety.org/nigeria"
     },
     { 
