@@ -8,6 +8,7 @@ export default function Footer() {
     event: [
       // { name: 'About AfIC', href: '/about' },
       { name: 'Speakers', href: '/speakers' },
+      { name: 'About us', href: '/about' },
       { name: 'Agenda', href: '/agenda' },
       { name: 'Sponsors', href: '/sponsorship' },
       { name: 'Tickets', href: '/tickets' }

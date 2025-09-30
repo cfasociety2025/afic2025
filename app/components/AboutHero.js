@@ -14,15 +14,15 @@ export default function AboutHero() {
           <div className="text-white order-2 lg:order-1">
             <div className="max-w-xl">
               <h2 className="display-headline text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-6 sm:mb-8 leading-tight">
-                About AfIC
+                About CFA Society East Africa
               </h2>
               <div className="w-16 sm:w-20 h-1 bg-white mb-6 sm:mb-8"></div>
               
               <div className="space-y-4 sm:space-y-6 mb-8 sm:mb-10">
-                <p className="body-copy text-base sm:text-lg leading-relaxed text-gray-200">
+                {/* <p className="body-copy text-base sm:text-lg leading-relaxed text-gray-200">
                   Learn about the mission, partners, and community behind Africa's
                   flagship investment conference.
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
@@ -31,7 +31,7 @@ export default function AboutHero() {
           <div className="order-1 lg:order-2">
             <div className="w-full max-w-2xl mx-auto">
               <Image
-                src="/afic12.png"
+                src="/afic19.png"
                 alt="About Africa Investment Conference"
                 width={700}
                 height={525}

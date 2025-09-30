@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export default function AboutCFAEmirates() {
+export default function AboutCFAEA() {
   return (
     <section className="relative bg-white  py-16 sm:py-20 lg:py-24 overflow-hidden" role="region" aria-label="About CFA Society East Africa">
       {/* Background overlay */}
@@ -10,19 +10,18 @@ export default function AboutCFAEmirates() {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
           
           {/* Left Column - Content */}
-          <div className="text-black order-2 lg:order-1">
+          <div className="text-black order-1 lg:order-2">
             <div className="max-w-xl">
               <h2 className="display-headline text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-6 sm:mb-8 leading-tight">
-                CFA Society East Africa
+              
               </h2>
               <div className="w-16 sm:w-20 h-1 bg-white mb-6 sm:mb-8"></div>
               
               <div className="space-y-4 sm:space-y-6 mb-8 sm:mb-10">
                 <p className="body-copy text-base sm:text-lg leading-relaxed text-gray-900">
-                The CFA Society East Africa is an association of investment professionals, affiliated to CFA Institute. The society is governed by the fundamental values of professional excellence, integrity, cooperation, and volunteer service. CFA Society East Africa was chartered in March 2014 to serve CFA Institute members in the East Africa region including countries such as Kenya, Uganda, Tanzania, Rwanda, and Ethiopia.
+                CFA Society East Africa is an organization directed by volunteers whose members occupy such positions as CEOs, Research Directors, Investment and Portfolio Managers and Analysts, Traders, Dealers and Brokers, Risk Managers, Strategists, Consultants and Educators among many others. 
 
-Our shared mission is to promote the highest standards of ethical and professional conduct, enhance financial and investment knowledge amongst members, heighten financial literacy amongst investors and drive financial market development within the East Africa region.
-
+Our Cultural Values define who we are, what we stand for, and what we aspire to be. They run deeply through the organization, guiding our internal and external behaviors. They bind our colleagues together, across every level of business, in passionate pursuit of our company's mission.
 
                 </p>
                 
@@ -33,9 +32,10 @@ Our shared mission is to promote the highest standards of ethical and profession
                 <a
                   href="https://www.cfasociety.org/eastafrica/about-us/who-we-are"
                   className="bg-cfa-bright-blue text-white px-8 py-4 font-bold uppercase tracking-wider text-sm hover:bg-gray-100 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white focus:ring-offset-cfa-dark-blue min-h-[48px] flex items-center justify-center border border-white"
-                  aria-label="Register for AfIC 2025"
+                  aria-label="Learn More about CFA Society East Africa"
                 >
-                  Learn More  <svg className="ml-1 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  About us 
+                  <svg className="ml-1 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                         </svg>
                 </a>
@@ -44,10 +44,10 @@ Our shared mission is to promote the highest standards of ethical and profession
           </div>
 
           {/* Right Column - Image */}
-          <div className="order-1 lg:order-2">
+            <div className="order-2 lg:order-1">
             <div className="w-full max-w-2xl mx-auto">
               <Image
-                src="/afic12.png"
+                src="/afic20.png"
                 alt="Africa Investment Conference East Africa Event"
                 width={700}
                 height={525}

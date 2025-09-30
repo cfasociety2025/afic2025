@@ -9,6 +9,7 @@ export default function Navbar() {
 
   const navigation = [
     { name: 'Home', href: '/' },
+    { name: 'About us', href: '/about' },
     { name: 'Sponsorship', href: '/sponsorship' },
     { name: 'Agenda', href: '/agenda' },
     { name: 'Speakers', href: '/speakers' },
