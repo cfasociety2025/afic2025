@@ -7,8 +7,8 @@ const AgendaPage = () => {
 
   const agendaData = {
     day1: {
-      date: "10th December 2025",
-      venue: "Mövenpick Hotel & Residences, Nairobi, Kenya",
+      date: "10th Dec 2025",
+      venue: "Mövenpick Hotel & Residences, Nairobi.",
       sessions: [
         {
           time: "8:00 - 9:00 AM",
@@ -139,8 +139,8 @@ const AgendaPage = () => {
       ]
     },
     day2: {
-      date: "11th December 2025",
-      venue: "Mövenpick Hotel & Residences, Nairobi, Kenya",
+      date: "11th Dec 2025",
+      venue: "Mövenpick Hotel & Residences, Nairobi.",
       sessions: [
         {
           time: "8:00 - 9:00 AM",
