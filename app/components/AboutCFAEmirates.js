@@ -12,8 +12,8 @@ export default function AboutCFAEmirates() {
           {/* Left Column - Content */}
           <div className="text-black order-2 lg:order-1">
             <div className="max-w-xl">
-              <h2 className="display-headline text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-6 sm:mb-8 leading-tight">
-                CFA Society East Africa
+              <h2 className="display-headline text-2xl sm:text-3xl lg:text-4xl xl:text-4xl font-bold mb-6 sm:mb-4 leading-tight">
+                About CFA Society East Africa
               </h2>
               <div className="w-16 sm:w-20 h-1 bg-white mb-6 sm:mb-8"></div>
               
