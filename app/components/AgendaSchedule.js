@@ -164,7 +164,7 @@ const AgendaPage = () => {
           time: "10:00 - 11:00 AM",
           title: "Parallel Deep-Dive Tracks",
           speaker: "Track 1 – Policy & Integration: Regional frameworks for capital mobility, cross-border listings.",
-          role: "Track 2 – Climate & ESG Financing: Practical tools for green bonds, climate funds, blended finance. Track 3 – Innovation & SMEs: Scaling fintech and SME hubs as investable assets."
+          role: "Track 2 – Innovation & SMEs: Scaling fintech and SME hubs as investable assets."
         },
         {
           time: "11:00 - 12:00 PM",
