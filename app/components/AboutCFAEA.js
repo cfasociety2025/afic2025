@@ -2,9 +2,22 @@ import Image from 'next/image';
 
 export default function AboutCFAEA() {
   return (
-    <section className="relative bg-white  py-16 sm:py-20 lg:py-24 overflow-hidden" role="region" aria-label="About CFA Society East Africa">
-      {/* Background overlay */}
-      <div className="absolute inset-0 bg-white" aria-hidden="true"></div>
+    <section className="relative bg-gray-50 py-16 sm:py-20 lg:py-24 overflow-hidden" role="region" aria-label="About CFA Society East Africa">
+      {/* Geometric Background Elements */}
+      <div className="absolute inset-0" aria-hidden="true">
+        {/* Large geometric shape - top right */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-cfa-bright-blue/10 transform rotate-45 translate-x-1/2 -translate-y-1/2 geometric-float-1"></div>
+        
+        {/* Medium geometric shape - bottom left */}
+        <div className="absolute bottom-0 left-1/4 w-64 h-64 bg-cfa-bright-blue/15 transform -rotate-12 translate-y-1/3 geometric-float-2"></div>
+        
+        {/* Small accent shape - middle right */}
+        <div className="absolute top-1/2 right-0 w-32 h-32 bg-cfa-bright-blue/8 transform rotate-45 translate-x-1/2 geometric-float-1"></div>
+        
+        {/* Gradient overlay shapes */}
+        <div className="absolute top-1/4 right-1/3 w-80 h-80 bg-gradient-to-br from-cfa-bright-blue/5 to-transparent rounded-full blur-3xl geometric-pulse"></div>
+        <div className="absolute bottom-1/4 left-1/4 w-72 h-72 bg-gradient-to-tr from-cfa-purple/5 to-transparent rounded-full blur-2xl geometric-pulse"></div>
+      </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
@@ -12,16 +25,16 @@ export default function AboutCFAEA() {
           {/* Left Column - Content */}
           <div className="text-black order-1 lg:order-2">
             <div className="max-w-xl">
-              <h2 className="display-headline text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-6 sm:mb-8 leading-tight">
-              
+              <h2 className="display-headline text-2xl sm:text-3xl lg:text-4xl xl:text-4xl font-bold mb-6 sm:mb-8 leading-tight text-cfa-dark-blue">
+                About CFA Society East Africa
               </h2>
-              <div className="w-16 sm:w-20 h-1 bg-white mb-6 sm:mb-8"></div>
+              <div className="w-16 sm:w-20 h-1 bg-cfa-bright-blue mb-6 sm:mb-8"></div>
               
               <div className="space-y-4 sm:space-y-6 mb-8 sm:mb-10">
                 <p className="body-copy text-base sm:text-lg leading-relaxed text-gray-900">
-                CFA Society East Africa is an organization directed by volunteers whose members occupy such positions as CEOs, Research Directors, Investment and Portfolio Managers and Analysts, Traders, Dealers and Brokers, Risk Managers, Strategists, Consultants and Educators among many others. 
+               The CFA Society East Africa is an association of investment professionals, affiliated to CFA Institute. The society is governed by the fundamental values of professional excellence, integrity, cooperation, and volunteer service. CFA Society East Africa was chartered in March 2014 to serve CFA Institute members in the East Africa region including countries such as Kenya, Uganda, Tanzania, Rwanda, and Ethiopia.
 
-Our Cultural Values define who we are, what we stand for, and what we aspire to be. They run deeply through the organization, guiding our internal and external behaviors. They bind our colleagues together, across every level of business, in passionate pursuit of our company's mission.
+Our shared mission is to promote the highest standards of ethical and professional conduct, enhance financial and investment knowledge amongst members, heighten financial literacy amongst investors and drive financial market development within the East Africa region.
 
                 </p>
                 
@@ -47,7 +60,7 @@ Our Cultural Values define who we are, what we stand for, and what we aspire to 
             <div className="order-2 lg:order-1">
             <div className="w-full max-w-2xl mx-auto">
               <Image
-                src="/afic20.png"
+                src="/afic29.png"
                 alt="Africa Investment Conference East Africa Event"
                 width={700}
                 height={525}

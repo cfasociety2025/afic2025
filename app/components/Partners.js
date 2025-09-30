@@ -6,7 +6,7 @@ export default function Partners() {
     {
       type: "Hosted by",
       name: "CFA Society East Africa",
-      logo: "/Society EastAfrica.png",
+      logo: "/Society_East-Africa_RGB.png",
       url: "https://www.cfasociety.org/eastafrica"
     },
     {
