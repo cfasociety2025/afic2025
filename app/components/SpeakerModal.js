@@ -106,7 +106,7 @@ export default function SpeakerModal({ speaker, isOpen, onClose }) {
                     </p>
                   )}
                   
-                  {speaker.expertise && (
+                  {/* {speaker.expertise && (
                     <div>
                       <h3 className="section-header text-sm font-semibold text-cfa-dark-blue mb-2">
                         Areas of Expertise
@@ -122,9 +122,9 @@ export default function SpeakerModal({ speaker, isOpen, onClose }) {
                         ))}
                       </div>
                     </div>
-                  )}
+                  )} */}
 
-                  {speaker.achievements && (
+                  {/* {speaker.achievements && (
                     <div>
                       <h3 className="section-header text-sm font-semibold text-cfa-dark-blue mb-2">
                         Notable Achievements
@@ -138,7 +138,7 @@ export default function SpeakerModal({ speaker, isOpen, onClose }) {
                         ))}
                       </ul>
                     </div>
-                  )}
+                  )} */}
                 </div>
 
                 {/* Social Links */}
