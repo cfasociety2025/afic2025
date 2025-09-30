@@ -16,7 +16,7 @@ export default function Home() {
         <AboutAfIC />
         <Partners />
         <Speakers />
-        <AboutCFAEmirates />
+        {/* <AboutCFAEmirates /> */}
         <Contact />
       </main>
       <Footer />
