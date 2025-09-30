@@ -38,7 +38,7 @@ export default function AboutAfIC() {
                 </p>
                 
                 <p className="body-copy text-base sm:text-lg leading-relaxed text-black">
-                  This year's event is hosted by <strong className="text-black">CFA Society EA</strong>, in partnership with the 
+                  This year's event is hosted by <strong className="text-black">CFA Society East Africa</strong>, in partnership with the 
                   <strong className="text-black"> CFA Institute</strong>, in collaboration with all African societies including 
                   CFA Society South Africa, CFA Society Mauritius, CFA Society Nigeria, CFA Society Egypt and CFA Society Ghana.
                 </p>
