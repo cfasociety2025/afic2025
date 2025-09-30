@@ -34,3 +34,5 @@ export default function SpeakersList({ speakers, onOpenModal }) {
     </section>
   );
 }
+
+
