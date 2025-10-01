@@ -54,7 +54,7 @@ export default function Hero() {
           {/* Left Column - Event Image */}
           <div className="text-white order-1 lg:order-1">
             {/* Event Image Container */}
-            <div className="border border-white/30 p-4 sm:p-6 lg:p-8 mb-6 sm:mb-8 backdrop-blur-xs ">
+            <div className="border border-white/30 p-4 sm:p-6 lg:p-8 mb-6 sm:mb-8 ">
               <div className="hero-image-container w-full">
                 <Image
                   src="/herooverlay.png"
