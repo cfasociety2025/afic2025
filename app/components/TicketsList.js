@@ -38,8 +38,8 @@ const ticketsData = [
     price: 250,
     tiers: [
       { label: 'Early Bird (Sep 22 – Oct 31, 2025)', price: 250 },
-      { label: 'Regular (Nov 1 – Nov 30, 2025)', price: 170 },
-      { label: 'Late (Dec 1 – Dec 9, 2025)', price: 120 },
+      { label: 'Regular (Nov 1 – Nov 30, 2025)', price: 300 },
+      { label: 'Late (Dec 1 – Dec 9, 2025)', price: 350 },
     ],
   },
   { id: 'golf', name: 'Golf Networking Experience', price: 250 },
