@@ -28,7 +28,7 @@ export default function PastEventHighlights() {
           </h2>
           <div className="w-20 h-1 bg-cfa-bright-blue mx-auto mb-6"></div>
           <p className="body-copy text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            The first-ever CFA Institute Africa Investment Conference, hosted by CFA Society Nigeria in Lagos, was a resounding success.
+            The first-ever CFA Institute Africa Investment Conference, hosted by CFA Society Nigeria in Lagos, powered by CFA Institute was a resounding success.
           </p>
         </div>
 
@@ -74,7 +74,7 @@ export default function PastEventHighlights() {
           <div className="order-1 lg:order-2">
             <div className="w-full max-w-2xl mx-auto">
               <Image
-                src="https://afic2025.s3.us-east-1.amazonaws.com/WVS_7760.JPG"
+                src="https://afic2025.s3.us-east-1.amazonaws.com/DND_0734.JPG"
                 alt="AfIC 2023 Conference Highlights"
                 width={700}
                 height={525}
