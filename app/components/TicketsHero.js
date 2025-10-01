@@ -31,7 +31,7 @@ export default function TicketsHero() {
           <div className="order-1 lg:order-2">
             <div className="w-full max-w-2xl mx-auto">
               <Image
-                src="/afic21.png"
+                src="/ticketpic.png"
                 alt="Africa Investment Conference Tickets"
                 width={700}
                 height={525}

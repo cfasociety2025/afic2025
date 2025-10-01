@@ -31,7 +31,7 @@ export default function AgendaHero() {
           <div className="order-1 lg:order-2">
             <div className="w-full max-w-2xl mx-auto">
               <Image
-                src="/afic15.png"
+                src="/agendafic.png"
                 alt="Africa Investment Conference Agenda"
                 width={700}
                 height={525}
