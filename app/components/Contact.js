@@ -85,7 +85,7 @@ export default function Contact() {
                     href="mailto:Aru@quiet-loud.com"
                     className="text-cfa-bright-blue hover:text-cfa-dark-blue font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-cfa-bright-blue focus:ring-offset-2"
                   >
-                   hotel.nairobi@movenpick.com / hazel.alusiola@movenpick.com
+                   hotel.nairobi@movenpick.com <br/> hazel.alusiola@movenpick.com
                   </a>
                 </div>
               </div>
