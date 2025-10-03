@@ -28,7 +28,7 @@ export default function PastEventHighlights() {
           </h2>
           <div className="w-20 h-1 bg-cfa-bright-blue mx-auto mb-6"></div>
           <p className="body-copy text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            The first-ever CFA Institute Africa Investment Conference, hosted by CFA Society Nigeria in Lagos, powered by CFA Institute was a resounding success.
+            Africa Investment Conference, hosted by CFA Society Nigeria in Lagos, powered by CFA Institute was a resounding success.
           </p>
         </div>
 
