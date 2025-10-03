@@ -60,7 +60,7 @@ export default function Contact() {
                    Organizing Team
                   </p>
                   <p className="body-copy text-gray-600 mb-3">
-                  Partnership, Sponsorship, Media & Ticket related inquiries
+                  Partnership, Sponsorship, Media & Ticket related inquiries.
                   </p>
                   <a
                     href="mailto: AFIC2025@eastafrica.cfasociety.org"
@@ -71,23 +71,23 @@ export default function Contact() {
                 </div>
 
                 {/* Partnerships Contact */}
-                {/* <div className="bg-white p-6 shadow-md border border-gray-100 hover:border-cfa-bright-blue/30 transition-all duration-300">
+                <div className="bg-white p-6 shadow-md border border-gray-100 hover:border-cfa-bright-blue/30 transition-all duration-300">
                   <h4 className="body-header font-semibold text-cfa-dark-blue mb-2">
-                    Aru Gupta
+                    Movenpick Hotel & Residences
                   </h4>
                   <p className="body-copy text-gray-600 mb-2">
-                    Head of Partnerships
+                    Accomodation inquiries.
                   </p>
                   <p className="body-copy text-gray-600 mb-3">
-                    Quiet Loud
+                   
                   </p>
                   <a
                     href="mailto:Aru@quiet-loud.com"
                     className="text-cfa-bright-blue hover:text-cfa-dark-blue font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-cfa-bright-blue focus:ring-offset-2"
                   >
-                    Aru@quiet-loud.com
+                   hotel.nairobi@movenpick.com / hazel.alusiola@movenpick.com
                   </a>
-                </div> */}
+                </div>
               </div>
             </div>
           </div>
