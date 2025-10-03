@@ -25,22 +25,22 @@ export default function Partners() {
     },
     { 
       name: "CFA Society South Africa", 
-      logo: "/Society_South-Africa_RGB.png", 
+      logo: "/cfasa.png", 
       url: "https://www.cfasociety.org/southafrica" 
     },
     { 
       name: "CFA Society Mauritius", 
-      logo: "/Society_Mauritius_RGB.png", 
+      logo: "/cfamau.png", 
       url: "https://www.cfasociety.org/mauritius" 
     },
     { 
       name: "CFA Society Egypt", 
-      logo: "/Society_Egypt_RGB.png", 
+      logo: "/cfaegy.png", 
       url: "https://www.cfasociety.org/egypt" 
     },
     { 
       name: "CFA Society Ghana", 
-      logo: "/Society_Ghana_RGB.png", 
+      logo: "/cfagn.png", 
       url: "https://www.cfasociety.org/ghana" 
     }
   ];
