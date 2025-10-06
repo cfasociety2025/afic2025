@@ -67,6 +67,12 @@ export default function Contact() {
                     className="text-cfa-bright-blue hover:text-cfa-dark-blue font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-cfa-bright-blue focus:ring-offset-2"
                   >
                      AFIC2025@eastafrica.cfasociety.org
+                  </a> <br/>
+                  <a
+                    href="tel: +254 798 515 738"
+                    className="text-cfa-bright-blue hover:text-cfa-dark-blue font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-cfa-bright-blue focus:ring-offset-2"
+                  >
+                     +254 798 515 738
                   </a>
                 </div>
 
