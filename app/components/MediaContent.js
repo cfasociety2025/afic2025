@@ -6,8 +6,8 @@ export default function MediaContent() {
     {
       id: 1,
       title: 'AfIC 2025 - First Edition Newsletter',
-      date: 'January 2025',
-      description: 'The inaugural newsletter featuring exciting updates about Africa Investment Conference 2025 in Nairobi, Kenya. Get the latest information about speakers, agenda, and how to participate.',
+      date: 'October 2025',
+      description: 'The inaugural newsletter featuring exciting updates about CFA Society Nigeria and Africa Investment Conference 2025 in Nairobi, Kenya.',
       type: 'Newsletter',
       featured: true,
       link: 'https://drive.google.com/file/d/15SaBDsH0B6ORqKNO0jlxtcEUZSOACYHd/view?usp=sharing'
@@ -94,22 +94,7 @@ export default function MediaContent() {
             ))}
           </div>
 
-          {/* Coming Soon Message */}
-          <div className="mt-16 text-center">
-            <div className="bg-gray-50 p-8 sm:p-12 rounded-lg max-w-3xl mx-auto">
-              <div className="w-16 h-16 bg-cfa-bright-blue/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-cfa-bright-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-                </svg>
-              </div>
-              <h3 className="display-headline text-2xl sm:text-3xl font-bold mb-4 text-cfa-dark-blue">
-                More Content Coming Soon
-              </h3>
-              <p className="body-copy text-base sm:text-lg leading-relaxed text-gray-700 mb-6">
-                We're working on bringing you more exciting newsletters, press releases, and media coverage. Subscribe to our newsletter to be the first to know when new content is available.
-              </p>
-            </div>
-          </div>
+       
         </div>
       </section>
 
@@ -125,7 +110,7 @@ export default function MediaContent() {
           
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
             <a
-              href="mailto:media@afic2025.com"
+              href="mailto:AFIC2025@eastafrica.cfasociety.org"
               className="bg-cfa-bright-blue text-white px-8 py-4 font-bold uppercase tracking-wider text-sm hover:bg-cfa-dark-blue transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cfa-bright-blue min-h-[48px] flex items-center justify-center"
               aria-label="Contact media team"
             >
