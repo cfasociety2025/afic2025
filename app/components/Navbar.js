@@ -6,13 +6,23 @@ import { useState, useEffect } from 'react';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
 
   const navigation = [
     { name: 'Home', href: '/' },
-    { name: 'About us', href: '/about' },
+    { 
+      name: 'About', 
+      href: '#',
+      hasDropdown: true,
+      dropdownItems: [
+        { name: 'About AfIC', href: '/about/afic' },
+        { name: 'About CFA East Africa', href: '/about/cfa-ea' },
+      ]
+    },
     { name: 'Sponsorship', href: '/sponsorship' },
     { name: 'Agenda', href: '/agenda' },
     { name: 'Speakers', href: '/speakers' },
+    { name: 'Media', href: '/media' },
     { name: 'Tickets', href: '/tickets' },
   ];
 
@@ -105,14 +115,59 @@ export default function Navbar() {
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
               {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="font-medium transition-colors duration-300 py-2 px-3 rounded-md focus:outline-none focus:ring-2 focus:ring-cfa-bright-blue focus:ring-offset-2 whitespace-nowrap text-gray-700 hover:text-cfa-bright-blue"
-                  aria-label={`Navigate to ${item.name}`}
-                >
-                  {item.name}
-                </Link>
+                item.hasDropdown ? (
+                  <div 
+                    key={item.name} 
+                    className="relative group"
+                    onMouseEnter={() => setIsAboutDropdownOpen(true)}
+                    onMouseLeave={() => setIsAboutDropdownOpen(false)}
+                  >
+                    <button
+                      className="font-medium transition-colors duration-300 py-2 px-3 rounded-md focus:outline-none focus:ring-2 focus:ring-cfa-bright-blue focus:ring-offset-2 whitespace-nowrap text-gray-700 hover:text-cfa-bright-blue flex items-center"
+                      aria-expanded={isAboutDropdownOpen}
+                      aria-haspopup="true"
+                    >
+                      {item.name}
+                      <svg 
+                        className={`ml-1 w-4 h-4 transition-transform duration-200 ${isAboutDropdownOpen ? 'rotate-180' : ''}`} 
+                        fill="none" 
+                        stroke="currentColor" 
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+                    
+                    {/* Dropdown Menu - No gap between button and menu */}
+                    {isAboutDropdownOpen && (
+                      <div className="absolute left-0 pt-2 w-56 z-50">
+                        <div className="rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                          <div className="py-1" role="menu" aria-orientation="vertical">
+                            {item.dropdownItems.map((dropdownItem) => (
+                              <Link
+                                key={dropdownItem.name}
+                                href={dropdownItem.href}
+                                className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 hover:text-cfa-bright-blue transition-colors duration-200"
+                                role="menuitem"
+                              >
+                                {dropdownItem.name}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className="font-medium transition-colors duration-300 py-2 px-3 rounded-md focus:outline-none focus:ring-2 focus:ring-cfa-bright-blue focus:ring-offset-2 whitespace-nowrap text-gray-700 hover:text-cfa-bright-blue"
+                    aria-label={`Navigate to ${item.name}`}
+                  >
+                    {item.name}
+                  </Link>
+                )
               ))}
             </div>
 
@@ -163,24 +218,63 @@ export default function Navbar() {
                    borderTop: '1px solid rgba(68, 118, 255, 0.2)'
                  }}>
               {navigation.map((item, index) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="block px-3 py-3 text-gray-700 hover:text-cfa-bright-blue font-medium rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-cfa-bright-blue focus:ring-offset-2 min-h-[44px] flex items-center hover:bg-white/60 hover:backdrop-blur-sm hover:shadow-lg"
-                  onClick={() => setIsMenuOpen(false)}
-                  aria-label={`Navigate to ${item.name}`}
-                  tabIndex={isMenuOpen ? 0 : -1}
-                  style={{
-                    transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)'
-                  }}
-                >
-                  {item.name}
-                </Link>
+                item.hasDropdown ? (
+                  <div key={item.name} className="space-y-1">
+                    <button
+                      onClick={() => setIsAboutDropdownOpen(!isAboutDropdownOpen)}
+                      className="w-full flex items-center justify-between px-3 py-3 text-gray-700 hover:text-cfa-bright-blue font-medium rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-cfa-bright-blue focus:ring-offset-2 min-h-[44px] hover:bg-white/60"
+                      aria-expanded={isAboutDropdownOpen}
+                      tabIndex={isMenuOpen ? 0 : -1}
+                    >
+                      {item.name}
+                      <svg 
+                        className={`w-4 h-4 transition-transform duration-200 ${isAboutDropdownOpen ? 'rotate-180' : ''}`} 
+                        fill="none" 
+                        stroke="currentColor" 
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+                    {isAboutDropdownOpen && (
+                      <div className="pl-4 space-y-1">
+                        {item.dropdownItems.map((dropdownItem) => (
+                          <Link
+                            key={dropdownItem.name}
+                            href={dropdownItem.href}
+                            className="px-3 py-3 text-gray-600 hover:text-cfa-bright-blue font-medium rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-cfa-bright-blue focus:ring-offset-2 min-h-[44px] flex items-center hover:bg-white/60 text-sm"
+                            onClick={() => {
+                              setIsMenuOpen(false);
+                              setIsAboutDropdownOpen(false);
+                            }}
+                            tabIndex={isMenuOpen ? 0 : -1}
+                          >
+                            {dropdownItem.name}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className="px-3 py-3 text-gray-700 hover:text-cfa-bright-blue font-medium rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-cfa-bright-blue focus:ring-offset-2 min-h-[44px] flex items-center hover:bg-white/60 hover:backdrop-blur-sm hover:shadow-lg"
+                    onClick={() => setIsMenuOpen(false)}
+                    aria-label={`Navigate to ${item.name}`}
+                    tabIndex={isMenuOpen ? 0 : -1}
+                    style={{
+                      transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)'
+                    }}
+                  >
+                    {item.name}
+                  </Link>
+                )
               ))}
               <div className="pt-2">
                 <Link
                   href="/tickets"
-                  className="block mx-3 px-3 py-3 font-medium text-center transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white min-h-[44px] flex items-center justify-center text-white shadow-lg"
+                  className="mx-3 px-3 py-3 font-medium text-center transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white min-h-[44px] flex items-center justify-center text-white shadow-lg"
                   onClick={() => setIsMenuOpen(false)}
                   aria-label="Purchase conference tickets"
                   tabIndex={isMenuOpen ? 0 : -1}

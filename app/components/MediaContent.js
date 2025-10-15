@@ -1,0 +1,147 @@
+'use client';
+
+export default function MediaContent() {
+  // Newsletter data
+  const newsletters = [
+    {
+      id: 1,
+      title: 'AfIC 2025 - First Edition Newsletter',
+      date: 'January 2025',
+      description: 'The inaugural newsletter featuring exciting updates about Africa Investment Conference 2025 in Nairobi, Kenya. Get the latest information about speakers, agenda, and how to participate.',
+      type: 'Newsletter',
+      featured: true,
+      link: 'https://drive.google.com/file/d/15SaBDsH0B6ORqKNO0jlxtcEUZSOACYHd/view?usp=sharing'
+    },
+  ];
+
+  return (
+    <>
+      {/* Latest Newsletters Section */}
+      <section className="relative bg-white py-16 sm:py-20 lg:py-24 overflow-hidden" role="region" aria-label="Latest Newsletters">
+        {/* Geometric Background Elements */}
+        <div className="absolute inset-0" aria-hidden="true">
+          <div className="absolute top-0 left-0 w-96 h-96 bg-cfa-bright-blue/10 transform rotate-45 -translate-x-1/2 -translate-y-1/2 geometric-float-1"></div>
+          <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-cfa-bright-blue/15 transform -rotate-12 translate-y-1/3 geometric-float-2"></div>
+          <div className="absolute top-1/2 right-0 w-32 h-32 bg-cfa-bright-blue/8 transform rotate-45 translate-x-1/2 geometric-float-1"></div>
+          <div className="absolute top-1/4 right-1/3 w-80 h-80 bg-gradient-to-br from-cfa-bright-blue/5 to-transparent rounded-full blur-3xl geometric-pulse"></div>
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="display-headline text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-cfa-dark-blue">
+              Latest Newsletters
+            </h2>
+            <div className="w-20 h-1 bg-cfa-bright-blue mx-auto mb-6"></div>
+            <p className="body-copy text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+              Stay updated with our latest news, event highlights, and industry insights.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {newsletters.map((newsletter) => (
+              <article 
+                key={newsletter.id}
+                className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100"
+              >
+                <div className="p-6 sm:p-8">
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider bg-cfa-bright-blue/10 text-cfa-bright-blue rounded-full">
+                      {newsletter.type}
+                    </span>
+                    {newsletter.featured && (
+                      <span className="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider bg-cfa-yellow/20 text-cfa-dark-blue rounded-full">
+                        Featured
+                      </span>
+                    )}
+                  </div>
+                  
+                  <h3 className="display-headline text-xl sm:text-2xl font-bold mb-3 text-cfa-dark-blue">
+                    {newsletter.title}
+                  </h3>
+                  
+                  <p className="text-sm text-gray-500 mb-4">
+                    {newsletter.date}
+                  </p>
+                  
+                  <p className="body-copy text-base leading-relaxed text-gray-700 mb-6">
+                    {newsletter.description}
+                  </p>
+                  
+                  {newsletter.link ? (
+                    <a
+                      href={newsletter.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full bg-cfa-bright-blue text-white px-6 py-3 font-medium hover:bg-cfa-dark-blue transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cfa-bright-blue flex items-center justify-center"
+                      aria-label={`Read ${newsletter.title}`}
+                    >
+                      Read Newsletter
+                      <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                  ) : (
+                    <button 
+                      className="w-full bg-gray-400 text-white px-6 py-3 font-medium cursor-not-allowed"
+                      disabled
+                      aria-label="Coming soon"
+                    >
+                      Coming Soon
+                    </button>
+                  )}
+                </div>
+              </article>
+            ))}
+          </div>
+
+          {/* Coming Soon Message */}
+          <div className="mt-16 text-center">
+            <div className="bg-gray-50 p-8 sm:p-12 rounded-lg max-w-3xl mx-auto">
+              <div className="w-16 h-16 bg-cfa-bright-blue/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-cfa-bright-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                </svg>
+              </div>
+              <h3 className="display-headline text-2xl sm:text-3xl font-bold mb-4 text-cfa-dark-blue">
+                More Content Coming Soon
+              </h3>
+              <p className="body-copy text-base sm:text-lg leading-relaxed text-gray-700 mb-6">
+                We're working on bringing you more exciting newsletters, press releases, and media coverage. Subscribe to our newsletter to be the first to know when new content is available.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Press & Media Inquiries Section */}
+      <section className="relative bg-gray-50 py-16 sm:py-20 overflow-hidden" role="region" aria-label="Press Inquiries">
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="display-headline text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 text-cfa-dark-blue">
+            Press & Media Inquiries
+          </h2>
+          <p className="body-copy text-base sm:text-lg leading-relaxed text-gray-700 mb-8 max-w-2xl mx-auto">
+            For press releases, media partnerships, or interview requests, please contact our media team.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
+            <a
+              href="mailto:media@afic2025.com"
+              className="bg-cfa-bright-blue text-white px-8 py-4 font-bold uppercase tracking-wider text-sm hover:bg-cfa-dark-blue transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cfa-bright-blue min-h-[48px] flex items-center justify-center"
+              aria-label="Contact media team"
+            >
+              Contact Media Team
+            </a>
+            <a
+              href="/sponsorship"
+              className="bg-cfa-dark-blue text-white px-8 py-4 font-bold uppercase tracking-wider text-sm hover:bg-cfa-bright-blue transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cfa-dark-blue min-h-[48px] flex items-center justify-center"
+              aria-label="View sponsorship opportunities"
+            >
+              Sponsorship Opportunities
+            </a>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
