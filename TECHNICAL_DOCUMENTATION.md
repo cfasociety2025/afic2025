@@ -662,7 +662,8 @@ For technical support or questions about the codebase:
 
 4. **Review changes before pushing:**
    ```bash
-   git diff
+   git diff 
+   
    ```
 
 ---
