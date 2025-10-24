@@ -37,7 +37,7 @@ const ticketsData = [
     name: 'Candidate Conference Ticket',
     price: 250,
     tiers: [
-      { label: 'Early Bird (Sep 22 – Oct 31, 2025)', price: 250 },
+      { label: 'Early Bird (Sep 22 – Oct 31, 2025)', price: 2050 },
       { label: 'Regular (Nov 1 – Nov 30, 2025)', price: 300 },
       { label: 'Late (Dec 1 – Dec 9, 2025)', price: 350 },
     ],
