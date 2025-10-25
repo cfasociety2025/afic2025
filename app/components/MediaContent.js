@@ -10,7 +10,7 @@ export default function MediaContent() {
       description: 'The inaugural newsletter featuring exciting updates about CFA Society Nigeria and Africa Investment Conference 2025 in Nairobi, Kenya.',
       type: 'Newsletter',
       featured: true,
-      link: 'https://drive.google.com/file/d/15SaBDsH0B6ORqKNO0jlxtcEUZSOACYHd/view?usp=sharing'
+      link: 'https://drive.google.com/file/d/1wl1L0GAfyWgfeF3eOG_XwO5C2QCir8wy/view?usp=sharing'
     },
   ];
 
