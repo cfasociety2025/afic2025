@@ -22,8 +22,21 @@ export default function TicketsHero() {
               <div className="space-y-4 sm:space-y-6 mb-8 sm:mb-10">
                 <p className="body-copy text-base sm:text-lg leading-relaxed text-gray-200">
                   Secure your place at Africa's investment future. Join 500+ finance professionals, investors, and industry leaders at Africa's premier investment conference.
-                  
+                  Remember to register for the Immersion Experiences on 11th December 2025 to enhance your conference and networking experience:
                 </p>
+                <div className="bg-white/95 border-l-4 border-yellow-400 rounded-lg p-6 sm:p-8 my-8 shadow-md">
+                  <ul className="space-y-3">
+                    <li className="flex items-start">
+                      <span className="text-cfa-bright-blue mr-3 mt-0.5 text-2xl font-bold">•</span>
+                      <span className="text-gray-800 font-medium">Golf Networking Experience (Pre-Registered)</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-cfa-bright-blue mr-3 mt-0.5 text-2xl font-bold">•</span>
+                      <span className="text-gray-800 font-medium">Nairobi Cultural Heritage Tour (Pre-Registered)</span>
+                    </li>
+                  </ul>
+                </div>
+
               </div>
             </div>
           </div>
