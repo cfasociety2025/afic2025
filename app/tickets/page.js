@@ -23,9 +23,33 @@ export default function Tickets() {
               Conference Tickets
             </h2>
             <div className="w-16 sm:w-20 h-1 bg-cfa-dark-blue mx-auto mb-4 sm:mb-6"></div>
-            <p className="body-copy text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
-              Join 500+ finance professionals, investors, and industry leaders at Africa's premier investment conference. Early bird pricing available for a limited time.
-            </p>
+            <div className="body-copy text-base sm:text-lg text-gray-600 max-w-4xl mx-auto">
+              <p className="mb-8 text-lg sm:text-xl leading-relaxed">
+                Secure your place at the Africa investment Conference.
+                Join 500+ finance professionals, investors, and industry leaders at Africa's premier investment conference.
+              </p>
+              
+              {/* Immersion Experiences Callout */}
+              <div className="bg-gray-50 border-l-4 border-cfa-bright-blue rounded-lg p-6 sm:p-8 my-8">
+                <p className="text-gray-800 font-medium mb-4 text-base sm:text-lg">
+                  Remember to register for the Immersion Experiences on 11th December 2025 to enhance your conference and networking experience:
+                </p>
+                <ul className="space-y-3 ml-2">
+                  <li className="flex items-start">
+                    <span className="text-cfa-bright-blue mr-3 mt-1 text-xl">•</span>
+                    <span className="text-gray-700">Golf Networking Experience (Pre-Registered)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-cfa-bright-blue mr-3 mt-1 text-xl">•</span>
+                    <span className="text-gray-700">Nairobi Cultural Heritage Tour (Pre-Registered)</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <p className="text-gray-700 leading-relaxed">
+                Make the most of AfIC 2025 by connecting, learning, and experiencing the best of Nairobi before the main conference begins.
+              </p>
+            </div>
           </div>
 
           <TicketsList />

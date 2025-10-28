@@ -22,6 +22,7 @@ export default function TicketsHero() {
               <div className="space-y-4 sm:space-y-6 mb-8 sm:mb-10">
                 <p className="body-copy text-base sm:text-lg leading-relaxed text-gray-200">
                   Secure your place at Africa's investment future. Join 500+ finance professionals, investors, and industry leaders at Africa's premier investment conference.
+                  
                 </p>
               </div>
             </div>

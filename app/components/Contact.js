@@ -79,21 +79,43 @@ export default function Contact() {
 
                 {/* Partnerships Contact */}
                 <div className="bg-white p-6 shadow-md border border-gray-100 hover:border-cfa-bright-blue/30 transition-all duration-300">
-                  <h4 className="body-header font-semibold text-cfa-dark-blue mb-2">
+                  <h4 className="body-header font-semibold text-cfa-dark-blue mb-3">
                     Movenpick Hotel & Residences
                   </h4>
-                  <p className="body-copy text-gray-600 mb-2">
-                    Accomodation inquiries.
+                  <p className="body-copy text-gray-600 mb-4 leading-relaxed">
+                    We've partnered with Mövenpick Hotel & Residences Nairobi to offer <span className="font-semibold text-gray-700">exclusive discounted rates</span> for AfIC 2025 participants.
                   </p>
-                  <p className="body-copy text-gray-600 mb-3">
-                   
-                  </p>
-                  <a
-                    href="mailto:Aru@quiet-loud.com"
-                    className="text-cfa-bright-blue hover:text-cfa-dark-blue font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-cfa-bright-blue focus:ring-offset-2"
-                  >
-                   hotel.nairobi@movenpick.com <br/> hazel.alusiola@movenpick.com
-                  </a>
+                  
+                  <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                    <p className="body-copy text-gray-700 font-medium mb-3">
+                      To enjoy the special rate:
+                    </p>
+                    <ul className="space-y-2">
+                      <li className="flex items-start body-copy text-gray-600">
+                        <span className="text-cfa-bright-blue mr-2 mt-1">•</span>
+                        <span>Register for the conference to receive your exclusive booking code.</span>
+                      </li>
+                      <li className="flex items-start body-copy text-gray-600">
+                        <span className="text-cfa-bright-blue mr-2 mt-1">•</span>
+                        <span>Use the code to book your stay by emailing:</span>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <a
+                      href="mailto:hotel.nairobi@movenpick.com"
+                      className="block text-cfa-bright-blue hover:text-cfa-dark-blue font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-cfa-bright-blue focus:ring-offset-2"
+                    >
+                      hotel.nairobi@movenpick.com
+                    </a>
+                    <a
+                      href="mailto:hazel.alusiola@movenpick.com"
+                      className="block text-cfa-bright-blue hover:text-cfa-dark-blue font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-cfa-bright-blue focus:ring-offset-2"
+                    >
+                      hazel.alusiola@movenpick.com
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

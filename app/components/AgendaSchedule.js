@@ -48,13 +48,13 @@ const AgendaPage = () => {
         },
         {
           time: "11:25 - 12:25 PM",
-          title: "Panel 1: Mobilizing Intra-African Capital – Challenges & Solutions",
+          title: "Panel 1: Mobilizing Intra-African Capital &/ Trade – Challenges & Solutions",
           speaker: null,
           role: null
         },
         {
           time: "12:25 - 1:15 PM",
-          title: "Fireside Chat: Can Africa Afford to Go Green? Climate Goals Vs Industrial Ambitions",
+          title: "Unlocking Africa’s Investment Potential: The Future of Capital, Capability, and Collaboration",
           speaker: null,
           role: null
         },
@@ -91,6 +91,12 @@ const AgendaPage = () => {
         {
           time: "4:45 - 5:00 PM",
           title: "Closing Remarks",
+          speaker: null,
+          role: null
+        },
+        {
+          time: "5:00 - 5:00 PM",
+          title: "Your CFA Journey: A Session for Candidates and Prospective Candidates (Add to the program)",
           speaker: null,
           role: null
         },
@@ -144,13 +150,13 @@ const AgendaPage = () => {
       sessions: [
         {
           time: "8:00 - 9:00 AM",
-          title: "Investment Lab & Policy Dialogue Breakfast",
+          title: "Investment Lab & Policy Dialogue Breakfast:",
           speaker: null,
-          role: "Focus: Ethiopia's Next Chapter – Local Capital, Industrial Policy & Integration as Investment Solutions"
+          role: "Unlocking Ethiopia’s Potential: Local Capital, Industrial Policy & East African Synergies"
         },
         {
           time: "9:00 - 9:30 AM",
-          title: "Technical Spotlight: Case Study – Regional Pension Fund Collaboration / Green Bond Success",
+          title: "Technical Spotlight: Case Study – Leveraging Regional Pension Fund Collaboration for Green Bond Success",
           speaker: null,
           role: null
         },
@@ -186,9 +192,14 @@ const AgendaPage = () => {
         },
         {
           time: "1:30 - 5:30 PM",
-          title: "Optional Immersion Experiences (Pre-Registered)",
+          title: "Optional Immersion Experiences (Pre-Registration Required)",
           speaker: "Golf Networking Experience",
-          role: "Impact Tour – SME Hubs, Climate Innovation & Local Enterprises | Nairobi Cultural Heritage Tour"
+          role: "Golf, Cultural Heritage"
+        },
+        {
+          time: "1:30 - 5:30 PM",
+          title: "Private Industry Table (Invite only) (Add to the program)",
+          
         },
         {
           time: "7:00 - 10:00 PM",
