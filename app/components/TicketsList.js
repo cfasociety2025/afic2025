@@ -42,11 +42,19 @@ const ticketsData = [
       { label: 'Late (Dec 1 – Dec 9, 2025)', price: 250 },
     ],
   },
+  {
+    id: 'dinner',
+    name: 'Dinner',
+    price: 100,
+    tiers: [
+      { label: 'Member', price: 100 },
+      { label: 'Non-member', price: 150 },
+    ],
+  },
 
 
 
   { id: 'golf', name: 'Golf Networking Experience', price: 250 },
-  { id: 'impact', name: 'Impact Tour – SME / Climate Hubs', price: 170 },
   { id: 'cultural', name: 'Cultural Heritage Tour', price: 120 },
 ];
 
