@@ -98,6 +98,76 @@ export default function MediaContent() {
         </div>
       </section>
 
+      {/* Videos Section */}
+      <section className="relative bg-gradient-to-br from-cfa-dark-blue to-cfa-bright-blue py-16 sm:py-20 lg:py-24 overflow-hidden" role="region" aria-label="Featured Videos">
+        {/* Geometric Background Elements */}
+        <div className="absolute inset-0" aria-hidden="true">
+          <div className="absolute top-1/4 left-0 w-72 h-72 bg-white/5 transform rotate-12 -translate-x-1/3 geometric-float-2"></div>
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-white/5 transform -rotate-45 translate-x-1/4 translate-y-1/4 geometric-float-1"></div>
+          <div className="absolute top-1/2 left-1/3 w-48 h-48 bg-cfa-yellow/10 transform rotate-45 geometric-pulse"></div>
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="display-headline text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-white">
+              Featured Videos
+            </h2>
+            <div className="w-20 h-1 bg-cfa-yellow mx-auto mb-6"></div>
+            <p className="body-copy text-lg sm:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+              Watch highlights and announcements from AfIC 2025 and CFA Society leaders.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+            {/* CFA Nigeria President Video */}
+            <div className="bg-white rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+              <div className="aspect-video relative">
+                <iframe
+                  src="https://www.youtube.com/embed/Kby1DJHF6K8"
+                  title="CFA Nigeria President"
+                  className="absolute inset-0 w-full h-full"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+              <div className="p-6">
+                <h3 className="display-headline text-xl sm:text-2xl font-bold text-cfa-dark-blue mb-2">
+                  CFA Nigeria President
+                </h3>
+                <p className="body-copy text-base text-gray-700 leading-relaxed">
+                  Message from the President of CFA Society Nigeria about AfIC 2025.
+                </p>
+              </div>
+            </div>
+
+            {/* Announcements Video */}
+            <div className="bg-white rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+              <div className="aspect-video relative">
+                <iframe
+                  src="https://www.youtube.com/embed/itqDDNKXtRU"
+                  title="AfIC 2025 Announcements"
+                  className="absolute inset-0 w-full h-full"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+              <div className="p-6">
+                <h3 className="display-headline text-xl sm:text-2xl font-bold text-cfa-dark-blue mb-2">
+                  Announcements
+                </h3>
+                <p className="body-copy text-base text-gray-700 leading-relaxed">
+                  Important announcements and updates about the conference.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Press & Media Inquiries Section */}
       <section className="relative bg-gray-50 py-16 sm:py-20 overflow-hidden" role="region" aria-label="Press Inquiries">
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
