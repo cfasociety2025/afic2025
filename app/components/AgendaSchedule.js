@@ -54,7 +54,7 @@ const AgendaPage = () => {
         },
         {
           time: "12:25 - 1:15 PM",
-          title: "Unlocking Africa’s Investment Potential: The Future of Capital, Capability, and Collaboration",
+          title: " Fireside Chat: Unlocking Africa’s Investment Potential - The Future of Capital, Capability, and Collaboration",
           speaker: null,
           role: null
         },
@@ -95,8 +95,8 @@ const AgendaPage = () => {
           role: null
         },
         {
-          time: "5:00 - 5:00 PM",
-          title: "Your CFA Journey: A Session for Candidates and Prospective Candidates (Add to the program)",
+          time: "5:00 - 5:30 PM",
+          title: "Your CFA Journey: A Session for Candidates and Prospective Candidates",
           speaker: null,
           role: null
         },
@@ -168,7 +168,7 @@ const AgendaPage = () => {
         },
         {
           time: "10:00 - 11:00 AM",
-          title: "Parallel Deep-Dive Tracks",
+          title: "Parallel Deep-Dive Tracks (Pre-registration required)",
           speaker: "Track 1 – Policy & Integration: Regional frameworks for capital mobility, cross-border listings.",
           role: "Track 2 – Innovation & SMEs: Scaling fintech and SME hubs as investable assets."
         },
@@ -194,11 +194,11 @@ const AgendaPage = () => {
           time: "1:30 - 5:30 PM",
           title: "Optional Immersion Experiences (Pre-Registration Required)",
           speaker: "Golf Networking Experience",
-          role: "Golf, Cultural Heritage"
+          role: "Nairobi, Cultural Heritage"
         },
         {
           time: "1:30 - 5:30 PM",
-          title: "Private Industry Table (Invite only) (Add to the program)",
+          title: "Private Industry Table (Invite only)",
           
         },
         {

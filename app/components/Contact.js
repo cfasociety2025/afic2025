@@ -80,7 +80,7 @@ export default function Contact() {
                 {/* Partnerships Contact */}
                 <div className="bg-white p-6 shadow-md border border-gray-100 hover:border-cfa-bright-blue/30 transition-all duration-300">
                   <h4 className="body-header font-semibold text-cfa-dark-blue mb-3">
-                    Movenpick Hotel & Residences
+                  Accommodation
                   </h4>
                   <p className="body-copy text-gray-600 mb-4 leading-relaxed">
                     We've partnered with Mövenpick Hotel & Residences Nairobi to offer <span className="font-semibold text-gray-700">exclusive discounted rates</span> for AfIC 2025 participants.
