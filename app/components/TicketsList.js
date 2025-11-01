@@ -17,9 +17,9 @@ const ticketsData = [
     name: 'Member Conference Ticket',
     price: 200,
     tiers: [
-      { label: 'Early Bird (Sep 22 – Oct 31, 2025)', price: 200 },
-      { label: 'Regular (Nov 1 – Nov 30, 2025)', price: 300 },
-      { label: 'Late (Dec 1 – Dec 9, 2025)', price: 500 },
+      { label: 'Early Bird (Sep 22 - Nov 15, 2025)', price: 200 },
+      { label: 'Regular (Nov 16 - Dec 6, 2025)', price: 300 },
+      { label: 'Late (Dec 7 - Dec 10, 2025)', price: 500 },
     ],
   },
   {
@@ -27,9 +27,9 @@ const ticketsData = [
     name: 'Non‑Member Conference Ticket',
     price: 300,
     tiers: [
-      { label: 'Early Bird (Sep 22 – Oct 31, 2025)', price: 300 },
-      { label: 'Regular (Nov 1 – Nov 30, 2025)', price: 400 },
-      { label: 'Late (Dec 1 – Dec 9, 2025)', price: 600 },
+      { label: 'Early Bird (Sep 22 - Nov 15, 2025)', price: 300 },
+      { label: 'Regular (Nov 16 - Dec 6, 2025)', price: 400 },
+      { label: 'Late (Dec 7 - Dec 10, 2025)', price: 600 },
     ],
   },
   {
@@ -37,9 +37,9 @@ const ticketsData = [
     name: 'Candidate Conference Ticket',
     price: 100,
     tiers: [
-      { label: 'Early Bird (Sep 22 – Oct 31, 2025)', price: 100 },
-      { label: 'Regular (Nov 1 – Nov 30, 2025)', price: 150 },
-      { label: 'Late (Dec 1 – Dec 9, 2025)', price: 250 },
+      { label: 'Early Bird (Sep 22 - Nov 15, 2025)', price: 100 },
+      { label: 'Regular (Nov 16 - Dec 6, 2025)', price: 150 },
+      { label: 'Late (Dec 7 - Dec 10, 2025)', price: 250 },
     ],
   },
   {
