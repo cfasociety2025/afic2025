@@ -18,10 +18,11 @@ export default function Navbar() {
         { name: 'About AfIC', href: '/about/afic' },
         { name: 'About CFA East Africa', href: '/about/cfa-ea' },
       ]
-    },
+    }, 
     { name: 'Sponsorship', href: '/sponsorship' },
     { name: 'Agenda', href: '/agenda' },
     { name: 'Speakers', href: '/speakers' },
+    { name: 'Travel', href: '/travel' },
     { name: 'Media', href: '/media' },
     { name: 'Tickets', href: '/tickets' },
   ];
@@ -54,7 +55,7 @@ export default function Navbar() {
       {/* Mobile menu overlay with advanced glassmorphism effect */}
       {isMenuOpen && (
         <div 
-          className="fixed inset-0 lg:hidden z-40 glass-overlay"
+          className="fixed inset-0 xl:hidden z-40 glass-overlay"
           onClick={() => setIsMenuOpen(false)}
           aria-hidden="true"
         >
@@ -113,7 +114,7 @@ export default function Navbar() {
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
+            <div className="hidden xl:flex items-center space-x-6 xl:space-x-8">
               {navigation.map((item) => (
                 item.hasDropdown ? (
                   <div 
@@ -123,7 +124,7 @@ export default function Navbar() {
                     onMouseLeave={() => setIsAboutDropdownOpen(false)}
                   >
                     <button
-                      className="font-medium transition-colors duration-300 py-2 px-3 rounded-md focus:outline-none focus:ring-2 focus:ring-cfa-bright-blue focus:ring-offset-2 whitespace-nowrap text-gray-700 hover:text-cfa-bright-blue flex items-center"
+                      className="font-medium transition-colors duration-300 py-2 px-2 lg:px-3 rounded-md focus:outline-none focus:ring-2 focus:ring-cfa-bright-blue focus:ring-offset-2 whitespace-nowrap text-gray-700 hover:text-cfa-bright-blue flex items-center text-sm lg:text-base"
                       aria-expanded={isAboutDropdownOpen}
                       aria-haspopup="true"
                     >
@@ -162,7 +163,7 @@ export default function Navbar() {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="font-medium transition-colors duration-300 py-2 px-3 rounded-md focus:outline-none focus:ring-2 focus:ring-cfa-bright-blue focus:ring-offset-2 whitespace-nowrap text-gray-700 hover:text-cfa-bright-blue"
+                    className="font-medium transition-colors duration-300 py-2 px-2 lg:px-3 rounded-md focus:outline-none focus:ring-2 focus:ring-cfa-bright-blue focus:ring-offset-2 whitespace-nowrap text-gray-700 hover:text-cfa-bright-blue text-sm lg:text-base"
                     aria-label={`Navigate to ${item.name}`}
                   >
                     {item.name}
@@ -172,10 +173,10 @@ export default function Navbar() {
             </div>
 
           {/* CTA Button */}
-          <div className="hidden lg:flex">
+          <div className="hidden xl:flex">
             <Link
               href="/tickets"
-              className="bg-black text-white px-4 xl:px-6 py-2 xl:py-3 font-medium transition-all duration-300 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 min-h-[44px] flex items-center whitespace-nowrap"
+              className="bg-black text-white px-3 lg:px-4 xl:px-6 py-2 xl:py-3 font-medium transition-all duration-300 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 min-h-[44px] flex items-center whitespace-nowrap text-sm lg:text-base"
               aria-label="Purchase conference tickets"
             >
               Buy Tickets
@@ -183,7 +184,7 @@ export default function Navbar() {
           </div>
 
             {/* Mobile menu button */}
-            <div className="lg:hidden relative z-50">
+            <div className="xl:hidden relative z-50">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="p-2 rounded-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-cfa-bright-blue focus:ring-offset-2 min-h-[44px] min-w-[44px] flex items-center justify-center text-gray-700 hover:text-cfa-bright-blue bg-white"
@@ -205,7 +206,7 @@ export default function Navbar() {
           {/* Mobile Navigation */}
           <div 
             id="mobile-menu"
-            className={`lg:hidden transition-all duration-500 ease-out relative z-50 ${
+            className={`xl:hidden transition-all duration-500 ease-out relative z-50 ${
               isMenuOpen 
                 ? 'max-h-screen opacity-100 visible' 
                 : 'max-h-0 opacity-0 invisible overflow-hidden'

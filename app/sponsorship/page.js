@@ -113,6 +113,65 @@ export default function Sponsorship() {
             </div>
           </div>
 
+          {/* Exhibition Section */}
+          <div className="mb-16">
+            <div className="grid lg:grid-cols-2 gap-8 items-start py-8 border-t border-gray-200">
+              <div className="order-2 lg:order-1">
+                <Image 
+                  src="/exhibition-sample.jpg" 
+                  alt="Exhibition Booth" 
+                  width={1200} 
+                  height={800} 
+                  className="w-full h-96 object-cover" 
+                />
+              </div>
+              <div className="order-1 lg:order-2">
+                <h3 className="section-header text-3xl text-black mb-6">Exhibit Now</h3>
+                  
+                  <ul className="body-copy text-black mb-6 space-y-3">
+                    <li className="flex items-start">
+                      <span className="text-cfa-bright-blue mr-3 mt-1">•</span>
+                      <span>1 branded exhibition booth (9x3 ft) with backdrop, table, and chairs</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-cfa-bright-blue mr-3 mt-1">•</span>
+                      <span>2 complimentary exhibitor passes (includes access to networking breaks and lunches)</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-cfa-bright-blue mr-3 mt-1">•</span>
+                      <span>Logo placement on event website and conference materials</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-cfa-bright-blue mr-3 mt-1">•</span>
+                      <span>Company profile and contacts listed in the digital event guide</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-cfa-bright-blue mr-3 mt-1">•</span>
+                      <span>Access to all networking sessions and cocktail receptions</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-cfa-bright-blue mr-3 mt-1">•</span>
+                      <span>Dedicated exhibitor support team on-site</span>
+                    </li>
+                  </ul>
+                  
+                  <div className="bg-white border-l-4 border-cfa-bright-blue p-4 mb-6">
+                    <p className="text-sm font-semibold text-gray-600 tracking-wide mb-1">Exhibition Fee</p>
+                    <p className="body-copy text-lg text-black">Available upon request</p>
+                  </div>
+                  
+                  <a 
+                    href="mailto:afic2025@eastafrica.cfasociety.org" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-block bg-cfa-bright-blue text-white px-8 py-3 font-semibold hover:bg-gray-900 transition-colors rounded-none"
+                  >
+                    Contact Us
+                  </a>
+                </div>
+              </div>
+            </div>
+
           {/* Special Sponsorship Options */}
           <div className="mb-16">
             <h3 className="section-header text-2xl sm:text-3xl text-black mb-8 text-center">
