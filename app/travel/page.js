@@ -232,7 +232,7 @@ export default function Travel() {
             <div className="bg-white border border-gray-200 overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="aspect-[4/3] overflow-hidden">
                 <Image
-                  src="/"
+                  src="/afic5.png"
                   alt="Mombasa Sandy Beaches"
                   width={600}
                   height={450}
@@ -242,7 +242,7 @@ export default function Travel() {
               <div className="p-6">
                 <h3 className="section-header text-xl text-black mb-3">Mombasa Beaches</h3>
                 <p className="body-copy text-gray-700 leading-relaxed">
-                  Visit the former home of the author of "Out of Africa." This historic farmhouse offers insights into colonial Kenya and the life of Karen Blixen.
+                  Escape to Kenya's stunning coastal paradise with pristine white sandy beaches, crystal-clear waters, and vibrant coral reefs perfect for diving and relaxation.
                 </p>
               </div>
             </div>
