@@ -171,12 +171,31 @@ export default function Travel() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             
+            {/* Nairobi City */}
+            <div className="bg-white border border-gray-200 overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="aspect-[4/3] overflow-hidden">
+                <Image
+                  src="/nairobi-city.jpg"
+                  alt="Nairobi City Skyline"
+                  width={600}
+                  height={450}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="section-header text-xl text-black mb-3">Nairobi City</h3>
+                <p className="body-copy text-gray-700 leading-relaxed">
+                  Discover Kenya's vibrant capital, a bustling metropolis blending modern skyscrapers with rich history. Explore world-class museums, vibrant markets, contemporary art galleries, and diverse cuisine in the "Green City in the Sun."
+                </p>
+              </div>
+            </div>
+            
             {/* Nairobi National Park */}
             <div className="bg-white border border-gray-200 overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="aspect-[4/3] overflow-hidden">
                 <Image
-                  src="/afic1.png"
-                  alt="Nairobi National Park"
+                  src="/nairobi-national-park.jpg"
+                  alt="Nairobi National Park Wildlife"
                   width={600}
                   height={450}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
@@ -185,7 +204,7 @@ export default function Travel() {
               <div className="p-6">
                 <h3 className="section-header text-xl text-black mb-3">Nairobi National Park</h3>
                 <p className="body-copy text-gray-700 leading-relaxed">
-                  Experience Africa's wildlife just 7km from the city center. Home to lions, rhinos, giraffes, and over 400 bird species, set against the backdrop of Nairobi's skyline.
+                  Experience Africa's wildlife just 7km from the city center. This unique park is home to lions, black rhinos, leopards, cheetahs, and over 400 bird species, all set against the dramatic backdrop of Nairobi's skyline.
                 </p>
               </div>
             </div>
@@ -194,7 +213,7 @@ export default function Travel() {
             <div className="bg-white border border-gray-200 overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="aspect-[4/3] overflow-hidden">
                 <Image
-                  src="/afic3.png"
+                  src="/giraffe-center.jpg"
                   alt="Giraffe Centre Nairobi"
                   width={600}
                   height={450}
@@ -204,83 +223,64 @@ export default function Travel() {
               <div className="p-6">
                 <h3 className="section-header text-xl text-black mb-3">Giraffe Centre</h3>
                 <p className="body-copy text-gray-700 leading-relaxed">
-                  Get up close with endangered Rothschild giraffes at this conservation and education center. A unique opportunity to feed and photograph these majestic creatures.
+                  Get up close with endangered Rothschild giraffes at this award-winning conservation center. Hand-feed these gentle giants from an elevated platform and learn about wildlife conservation efforts in an unforgettable interactive experience.
                 </p>
               </div>
             </div>
 
-            {/* Bomas of Kenya */}
+            {/* Lake Nakuru */}
             <div className="bg-white border border-gray-200 overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="aspect-[4/3] overflow-hidden">
                 <Image
-                  src="/afic4.png"
-                  alt="Bomas of Kenya Cultural Centre"
+                  src="/nakuru.jpg"
+                  alt="Lake Nakuru National Park"
                   width={600}
                   height={450}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="p-6">
-                <h3 className="section-header text-xl text-black mb-3">Bomas of Kenya</h3>
+                <h3 className="section-header text-xl text-black mb-3">Lake Nakuru</h3>
                 <p className="body-copy text-gray-700 leading-relaxed">
-                  Immerse yourself in Kenya's rich cultural heritage with traditional music, dance performances, and replicas of homesteads from various Kenyan tribes.
+                  Marvel at the stunning spectacle of thousands of flamingos painting the lake pink. This alkaline lake in the Great Rift Valley is a UNESCO World Heritage Site and sanctuary for both black and white rhinos, lions, and leopards.
                 </p>
               </div>
             </div>
 
-            {/* Mombasa Beaches */}
+            {/* Mombasa */}
             <div className="bg-white border border-gray-200 overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="aspect-[4/3] overflow-hidden">
                 <Image
-                  src="/afic5.png"
-                  alt="Mombasa Sandy Beaches"
+                  src="/mombasa.jpg"
+                  alt="Mombasa Beaches and Coast"
                   width={600}
                   height={450}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="p-6">
-                <h3 className="section-header text-xl text-black mb-3">Mombasa Beaches</h3>
+                <h3 className="section-header text-xl text-black mb-3">Mombasa</h3>
                 <p className="body-copy text-gray-700 leading-relaxed">
-                  Escape to Kenya's stunning coastal paradise with pristine white sandy beaches, crystal-clear waters, and vibrant coral reefs perfect for diving and relaxation.
+                  Escape to Kenya's stunning coastal paradise featuring pristine white sandy beaches, turquoise waters, and rich Swahili culture. Explore historic Fort Jesus, dive in coral reefs, and savor fresh seafood in this tropical haven.
                 </p>
               </div>
             </div>
 
-            {/* Nairobi City Market */}
+            {/* Masai Mara */}
             <div className="bg-white border border-gray-200 overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="aspect-[4/3] overflow-hidden">
                 <Image
-                  src="/afic6.png"
-                  alt="Nairobi Markets and Shopping"
+                  src="/the-mara.jpg"
+                  alt="Masai Mara National Reserve"
                   width={600}
                   height={450}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="p-6">
-                <h3 className="section-header text-xl text-black mb-3">Nairobi Markets</h3>
+                <h3 className="section-header text-xl text-black mb-3">Masai Mara</h3>
                 <p className="body-copy text-gray-700 leading-relaxed">
-                  Explore vibrant local markets featuring Kenyan crafts, textiles, jewelry, and art. Perfect for souvenirs and experiencing local culture.
-                </p>
-              </div>
-            </div>
-
-            {/* Great Rift Valley */}
-            <div className="bg-white border border-gray-200 overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="aspect-[4/3] overflow-hidden">
-                <Image
-                  src="/afic7.png"
-                  alt="Great Rift Valley"
-                  width={600}
-                  height={450}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="section-header text-xl text-black mb-3">Great Rift Valley</h3>
-                <p className="body-copy text-gray-700 leading-relaxed">
-                  Witness breathtaking views of one of the world's most spectacular geological features, with lakes, escarpments, and diverse ecosystems.
+                  Witness the world-famous Great Migration and experience Africa's most spectacular wildlife reserve. Home to the Big Five and traditional Maasai communities, the Mara offers unforgettable safari adventures in vast golden savannahs.
                 </p>
               </div>
             </div>
