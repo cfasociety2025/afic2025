@@ -32,7 +32,7 @@ const AgendaPage = () => {
           time: "10:00 - 11:00 AM",
           title: "Capital Formation Research Report Launch",
           speaker: null,
-          role: "with moderated Q&A"
+          // role: "with moderated Q&A"
         },
         {
           time: "11:00 - 11:05 AM",
@@ -150,9 +150,9 @@ const AgendaPage = () => {
       sessions: [
         {
           time: "8:00 - 9:00 AM",
-          title: "Investment Lab & Policy Dialogue Breakfast:",
+          title: "Investment Policy Dialogue::",
           speaker: null,
-          role: "Unlocking Ethiopia’s Potential: Local Capital, Industrial Policy & East African Synergies"
+          role: "Building Integrated African Capital Markets – Local Capital, Industrial Policy & Continental Synergies under AfCFTA"
         },
         {
           time: "9:00 - 9:30 AM",
