@@ -72,7 +72,7 @@ export default function Speakers() {
 
   return (
     <>
-      <section className="py-12 sm:py-16 lg:py-20 bg-white" role="region" aria-label="Conference Speakers">
+      <section className="py-12 sm:py-16 lg:py-20" style={{ backgroundColor: '#f6f6f6' }} role="region" aria-label="Conference Speakers">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Section Header */}

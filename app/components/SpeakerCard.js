@@ -2,50 +2,48 @@
 
 export default function SpeakerCard({ speaker, onOpenModal }) {
   return (
-    <div className="group bg-white shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-cfa-bright-blue/30">
+    <div 
+      className="group bg-white shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-cfa-bright-blue/30 rounded-xl cursor-pointer"
+      onClick={() => onOpenModal(speaker)}
+    >
       {/* Speaker Image */}
-      <div className="aspect-[4/3] overflow-hidden bg-white">
+      <div className="relative aspect-[4/5] overflow-hidden">
         {speaker.image ? (
           <img
             src={speaker.image}
             alt={`${speaker.name} - Speaker at AfIC 2025`}
-            className="w-full h-full object-contain"
+            className="w-full h-full object-cover"
           />
         ) : (
-          <div className="w-full h-full bg-gradient-to-br from-cfa-dark-blue to-cfa-bright-blue flex items-center justify-center group-hover:from-cfa-bright-blue group-hover:to-cfa-dark-blue transition-all duration-300">
-            <span className="text-white font-bold text-4xl sm:text-5xl">
+          <div className="w-full h-full bg-gradient-to-br from-[#4169E1] to-[#1E3A8A] flex items-center justify-center">
+            <span className="text-white font-bold text-5xl sm:text-6xl">
               {speaker.name.split(' ').map(n => n[0]).join('')}
             </span>
           </div>
         )}
+        
+        {/* Dark Blue Gradient Overlay at Bottom */}
+        <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-[#1E3A8A] via-[#1E3A8A]/60 to-transparent"></div>
       </div>
 
-      {/* Speaker Info */}
-      <div className="p-4 sm:p-6">
-        <h3 className="section-header text-lg sm:text-xl text-cfa-dark-blue mb-2 group-hover:text-cfa-bright-blue transition-colors duration-200">
-          {speaker.name}
+      {/* Speaker Info - Name Section */}
+      <div className="px-4 py-3 bg-gradient-to-br from-[#4169E1] to-[#1E3A8A]">
+        <h3 className="display-headline text-base sm:text-lg font-bold text-white leading-tight">
+          {speaker.name}{speaker.certification ? `, ${speaker.certification}` : ''}
         </h3>
-        
-        <p className="body-copy text-sm sm:text-base text-gray-600 mb-3 line-clamp-2">
+      </div>
+
+      {/* Speaker Details - White Section */}
+      <div className="flex-1 px-4 py-3 bg-white rounded-b-xl flex flex-col">
+        <p className="body-copy text-sm sm:text-base font-bold text-gray-900 mb-1">
           {speaker.title}
         </p>
         
-        {speaker.company && (
-          <p className="body-copy text-xs sm:text-sm text-gray-500 mb-4 font-medium">
-            {speaker.company}
+        {(speaker.company || speaker.location) && (
+          <p className="body-copy text-xs sm:text-sm text-gray-700 font-medium">
+            {speaker.company}{speaker.company && speaker.location ? ' - ' : ''}{speaker.location}
           </p>
         )}
-
-        <button
-          onClick={() => onOpenModal(speaker)}
-          className="inline-flex items-center text-cfa-bright-blue hover:text-cfa-dark-blue font-semibold text-sm transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-cfa-bright-blue focus:ring-offset-2 rounded-md px-2 py-1 -mx-2"
-          aria-label={`Learn more about ${speaker.name}`}
-        >
-          View Bio
-          <svg className="ml-1 w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
       </div>
     </div>
   );
