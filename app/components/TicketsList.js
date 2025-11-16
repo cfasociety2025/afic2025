@@ -15,7 +15,7 @@ const ticketsData = [
   {
     id: 'member',
     name: 'Member Conference Ticket',
-    price: 200,
+    price: 300,
     tiers: [
       { label: 'Early Bird (Sep 22 - Nov 15, 2025)', price: 200 },
       { label: 'Regular (Nov 16 - Dec 6, 2025)', price: 300 },
@@ -25,7 +25,7 @@ const ticketsData = [
   {
     id: 'non-member',
     name: 'Non‑Member Conference Ticket',
-    price: 300,
+    price: 400,
     tiers: [
       { label: 'Early Bird (Sep 22 - Nov 15, 2025)', price: 300 },
       { label: 'Regular (Nov 16 - Dec 6, 2025)', price: 400 },
@@ -35,7 +35,7 @@ const ticketsData = [
   {
     id: 'candidate',
     name: 'Candidate Conference Ticket',
-    price: 100,
+    price: 150,
     tiers: [
       { label: 'Early Bird (Sep 22 - Nov 15, 2025)', price: 100 },
       { label: 'Regular (Nov 16 - Dec 6, 2025)', price: 150 },
