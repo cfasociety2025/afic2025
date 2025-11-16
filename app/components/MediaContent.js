@@ -12,6 +12,17 @@ export default function MediaContent() {
       featured: true,
       link: 'https://drive.google.com/file/d/1wl1L0GAfyWgfeF3eOG_XwO5C2QCir8wy/view?usp=sharing'
     },
+    {
+      id: 2,
+      title: 'AfIC 2025 - Second Edition Newsletter',
+      date: 'November 2025',
+      description: 'The inaugural newsletter featuring exciting updates about CFA Society South Africa and Africa Investment Conference 2025 in Nairobi, Kenya.',
+      type: 'Newsletter',
+      featured: true,
+      link: 'https://drive.google.com/file/d/1ok1pHNX3AwG9cXAIbmQPzXK2_fpzjQ9A/view?usp=sharing'
+    },
+
+    
   ];
 
   return (
