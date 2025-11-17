@@ -318,6 +318,35 @@ export default function Travel() {
                 </p>
               </div>
             </div>
+
+            {/* Travel Arrangements - Highlighted Section */}
+            <div className="mt-8 bg-white rounded-lg shadow-lg p-6 sm:p-8 border-l-4 border-cfa-bright-blue">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0">
+                  <svg className="w-8 h-8 text-cfa-bright-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div className="flex-1">
+                  <h4 className="font-bold text-xl text-cfa-dark-blue mb-3">Book Your Trip</h4>
+                  <p className="body-copy text-gray-700 leading-relaxed mb-4">
+                    {/* Add travel agent details here */}
+                    For assistance with your travel arrangements, including flights, accommodations, and local tours, please contact our preferred travel partner @sunlavie254@gmail.com.
+                  </p>
+                  <div className="flex flex-wrap gap-3">
+                    <a 
+                      href="mailto:sunlavie254@gmail.com" 
+                      className="inline-flex items-center bg-cfa-bright-blue text-white px-6 py-2 font-semibold hover:bg-cfa-dark-blue transition-colors"
+                    >
+                      <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                      Contact Travel Agent
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>
