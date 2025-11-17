@@ -30,9 +30,9 @@ const AgendaPage = () => {
         },
         {
           time: "10:00 - 11:00 AM",
-          title: "Capital Formation Research Report Launch",
+          title: "Capital Formation Research Report Launch ",
           speaker: null,
-          // role: "with moderated Q&A"
+          //role: "with moderated Q&A"
         },
         {
           time: "11:00 - 11:05 AM",
@@ -71,53 +71,55 @@ const AgendaPage = () => {
           role: null
         },
         {
-          time: "3:15 - 3:30 PM",
-          title: "Live Q&A Session by CFA Institute President",
+          time: "3:15 - 4:00 PM",
+          title: " Fireside Chat: Can Africa Afford To Go Green? Climate Goals Vs. Industrial Ambitions",
           speaker: null,
           role: null
         },
         {
-          time: "3:30 - 3:45 PM",
+          time: "4:00 - 4:05 PM",
           title: "Sponsor Highlight",
           speaker: null,
           role: null
         },
         {
-          time: "3:45 - 4:45 PM",
+          time: "4:05 - 5:05 PM",
           title: "CFA Society Africa Presidents' Panel: Driving Regional Solutions",
           speaker: null,
           role: null
         },
         {
-          time: "4:45 - 5:00 PM",
+          time: "5:05 - 5:15 PM",
           title: "Closing Remarks",
           speaker: null,
           role: null
         },
         {
-          time: "5:00 - 5:30 PM",
+          time: "5:15 - 5:45 PM",
           title: "Your CFA Journey: A Session for Candidates and Prospective Candidates",
           speaker: null,
           role: null
         },
+        //EVENING GALA
         {
           time: "7:00 PM - 7:20 PM",
           title: "Welcome Remarks & Cultural Performances",
           speaker: null,
-          role: "Evening Gala"
+          //role: "Evening Gala"
         },
         {
           time: "7:20 PM - 7:45 PM",
+          title: "Guest of Honor Keynote",
+          speaker: null,
+          role: "The Next Generation of African Investment Professionals"
+        },
+        {
+          time: "7:45 PM - 8:05 PM",
           title: "Charter Award Ceremony",
           speaker: null,
           role: "Honoring new Charterholders across African Societies"
         },
-        {
-          time: "7:45 PM - 8:05 PM",
-          title: "Guest of Honor Keynote: The Next Generation of African Investment Professionals",
-          speaker: null,
-          role: null
-        },
+      
         {
           time: "8:05 PM - 8:10 PM",
           title: "Recognition of Partners & Sponsors",
@@ -125,14 +127,14 @@ const AgendaPage = () => {
           role: null
         },
         {
-          time: "8:10 PM - 9:10 PM",
-          title: "Gala Dinner Service",
+          time: "8:10 PM - 8:20 PM",
+          title: " Closing Toast by Guest of Honor",
           speaker: null,
           role: null
         },
         {
-          time: "9:10 PM - 9:20 PM",
-          title: "Closing Toast by Guest of Honor",
+          time: "8:20 PM - 9:20 PM",
+          title: "Gala Dinner Service",
           speaker: null,
           role: null
         },
@@ -150,13 +152,14 @@ const AgendaPage = () => {
       sessions: [
         {
           time: "8:00 - 9:00 AM",
-          title: "Investment Policy Dialogue::",
+          title: "Investment Policy Dialogue Breakfast:",
           speaker: null,
-          role: "Building Integrated African Capital Markets – Local Capital, Industrial Policy & Continental Synergies under AfCFTA"
+          role: `Unlocking Ethiopia’s Potential: Local Capital, Industrial
+ Policy & East African Synergies`
         },
         {
           time: "9:00 - 9:30 AM",
-          title: "Technical Spotlight: Case Study – Leveraging Regional Pension Fund Collaboration for Green Bond Success",
+          title: "Technical Spotlight: Case Study – Regional Pension Fund Collaboration For Green Bond Success",
           speaker: null,
           role: null
         },
@@ -169,7 +172,7 @@ const AgendaPage = () => {
         {
           time: "10:00 - 11:00 AM",
           title: "Parallel Deep-Dive Tracks (Pre-registration required)",
-          speaker: "Track 1 – Policy & Integration: Regional frameworks for capital mobility, cross-border listings.",
+          speaker: "Track 1 – Policy Integration & Risk Resilience: Regional frameworks for capital mobility, cross-border listings.",
           role: "Track 2 – Innovation & SMEs: Scaling fintech and SME hubs as investable assets."
         },
         {
