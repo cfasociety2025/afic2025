@@ -38,7 +38,7 @@ export default function Hero() {
       <div className="absolute inset-0 w-full h-full z-0 overflow-hidden bg-cfa-warm-white ">
         <iframe
           className="youtube-background"
-          src="https://www.youtube.com/embed/kZJ7CxP-UIU?autoplay=1&loop=1&mute=1&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&enablejsapi=1&playlist=kZJ7CxP-UIU&vq=hd1080&start=0&end=0"
+          src="https://www.youtube.com/embed/c2jiKgvtoLs?autoplay=1&loop=1&mute=1&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&enablejsapi=1&playlist=c2jiKgvtoLs&vq=hd1080&start=0&end=0"
           title="Africa Investment Conference Background Video"
           frameBorder="0"
           allow="autoplay; encrypted-media; picture-in-picture"
