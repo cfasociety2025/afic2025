@@ -100,12 +100,17 @@ const AgendaPage = () => {
           speaker: null,
           role: null
         },
-        //EVENING GALA
+        {
+          time: "5:45 PM - 7:00 PM",
+          title: "Evening Gala",
+          speaker: null,
+          role: null
+        },
         {
           time: "7:00 PM - 7:20 PM",
           title: "Welcome Remarks & Cultural Performances",
           speaker: null,
-          //role: "Evening Gala"
+          role: null
         },
         {
           time: "7:20 PM - 7:45 PM",
