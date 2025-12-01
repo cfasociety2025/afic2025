@@ -7,14 +7,10 @@ import SpeakersList from '../components/SpeakersList';
 import SpeakerModal from '../components/SpeakerModal';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
-import { getAllSpeakers } from '../../lib/speakersData';
 
 export default function Speakers() {
   const [selectedSpeaker, setSelectedSpeaker] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-
-  // Get all speakers for the speakers page
-  const speakers = getAllSpeakers();
 
   const openModal = (speaker) => {
     setSelectedSpeaker(speaker);
@@ -34,7 +30,7 @@ export default function Speakers() {
       <SpeakersHero />
 
       {/* Speakers Section */}
-      <SpeakersList speakers={speakers} onOpenModal={openModal} />
+      <SpeakersList onOpenModal={openModal} />
 
       {/* Contact Section */}
       <Contact />

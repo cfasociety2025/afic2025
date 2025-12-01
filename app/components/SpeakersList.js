@@ -1,8 +1,11 @@
 'use client';
 
-import SpeakerCard from './SpeakerCard';
+import SpeakerCardAnimated from './SpeakerCardAnimated';
+import { getSpeakersGrouped } from '../../lib/speakersData';
 
-export default function SpeakersList({ speakers, onOpenModal }) {
+export default function SpeakersList({ onOpenModal }) {
+  const speakersGrouped = getSpeakersGrouped();
+
   return (
     <section className="py-12 sm:py-16 lg:py-20" style={{ backgroundColor: '#f6f6f6' }} role="region" aria-label="Conference Speakers" id="speakers">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -19,14 +22,36 @@ export default function SpeakersList({ speakers, onOpenModal }) {
           </p>
         </div>
 
-        {/* Speakers Grid */}
-        <div className="grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-          {speakers.map((speaker) => (
-            <SpeakerCard 
-              key={speaker.id} 
-              speaker={speaker} 
-              onOpenModal={onOpenModal}
-            />
+        {/* Speakers by Organization/Country */}
+        <div className="space-y-12 sm:space-y-16 lg:space-y-20">
+          {speakersGrouped.map((group) => (
+            // Only render sections with speakers
+            group.speakers.length > 0 && (
+              <div key={group.section}>
+                {/* Section Header */}
+                <div className="mb-6 sm:mb-8">
+                  <h3 className="display-headline text-2xl sm:text-3xl text-cfa-dark-blue mb-2 font-bold">
+                    {group.section}
+                  </h3>
+                  <div className="w-16 h-1 bg-cfa-bright-blue"></div>
+                </div>
+
+                {/* Speakers Grid - 4 cards per row */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 justify-items-center">
+                  {group.speakers.map((speaker) => (
+                    <SpeakerCardAnimated 
+                      key={speaker.id}
+                      image={speaker.image}
+                      name={speaker.name}
+                      position={speaker.title}
+                      company={speaker.company}
+                      country={speaker.location}
+                      onViewProfile={() => onOpenModal(speaker)}
+                    />
+                  ))}
+                </div>
+              </div>
+            )
           ))}
         </div>
 

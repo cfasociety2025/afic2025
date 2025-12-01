@@ -1,18 +1,19 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import SpeakerModal from './SpeakerModal';
-import SpeakerCard from './SpeakerCard';
-import { getFeaturedSpeakers } from '../../lib/speakersData';
+import { useState } from "react";
+import { getFeaturedSpeakers } from "../../lib/speakersData";
+import SpeakerCardAnimated from "./SpeakerCardAnimated";
+import SpeakerModal from "./SpeakerModal";
 
 export default function Speakers() {
   const [selectedSpeaker, setSelectedSpeaker] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Get featured speakers for homepage (6 speakers)
-  const speakers = getFeaturedSpeakers(6);
+  // Get featured speakers for homepage (4 speakers)
+  const speakers = getFeaturedSpeakers(4);
 
   const openModal = (speaker) => {
+    console.log("Opening modal for speaker:", speaker);
     setSelectedSpeaker(speaker);
     setIsModalOpen(true);
   };
@@ -24,9 +25,12 @@ export default function Speakers() {
 
   return (
     <>
-      <section className="py-12 sm:py-16 lg:py-20" style={{ backgroundColor: '#f6f6f6' }} role="region" aria-label="Conference Speakers">
+      <section
+        className="py-12 sm:py-16 lg:py-20"
+        style={{ backgroundColor: "#f6f6f6" }}
+        aria-label="Conference Speakers"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
           {/* Section Header */}
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
             <h2 className="display-headline text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-cfa-bright-blue mb-4 sm:mb-6 text-cfa-dark-blue">
@@ -34,15 +38,23 @@ export default function Speakers() {
             </h2>
             <div className="w-16 sm:w-20 h-1 bg-cfa-dark-blue mx-auto mb-4 sm:mb-6"></div>
             <p className="body-copy text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
-              Meet the distinguished finance leaders, investment experts, and industry innovators 
-              who will share their insights at AfIC 2025.
+              Meet the distinguished finance leaders, investment experts, and
+              industry innovators who will share their insights at AfIC 2025.
             </p>
           </div>
 
-          {/* Speakers Grid */}
-          <div className="grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          {/* Speakers Grid - Single row for 4 speakers */}
+          <div className="flex justify-center gap-6 overflow-x-auto">
             {speakers.map((speaker) => (
-              <SpeakerCard key={speaker.id} speaker={speaker} onOpenModal={openModal} />
+              <SpeakerCardAnimated
+                key={speaker.id}
+                image={speaker.image}
+                name={speaker.name}
+                position={speaker.title}
+                company={speaker.company}
+                country={speaker.location}
+                onViewProfile={() => openModal(speaker)}
+              />
             ))}
           </div>
 
@@ -54,12 +66,23 @@ export default function Speakers() {
               aria-label="View all speakers page"
             >
               View All Speakers
-              <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              <svg
+                className="ml-2 w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                role="img"
+                aria-label="Arrow right"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
               </svg>
             </a>
           </div>
-
         </div>
       </section>
 
