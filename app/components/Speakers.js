@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { getFeaturedSpeakers } from "../../lib/speakersData";
+import { getFeaturedNonModerators, getFeaturedModerators } from "../../lib/speakersData";
 import SpeakerCardAnimated from "./SpeakerCardAnimated";
 import SpeakerModal from "./SpeakerModal";
 
@@ -9,8 +9,11 @@ export default function Speakers() {
   const [selectedSpeaker, setSelectedSpeaker] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Get featured speakers for homepage (4 speakers)
-  const speakers = getFeaturedSpeakers(4);
+  // Get featured speakers for homepage (4 speakers, excluding moderators)
+  const speakers = getFeaturedNonModerators(4);
+  
+  // Get featured moderators
+  const moderators = getFeaturedModerators();
 
   const openModal = (speaker) => {
     console.log("Opening modal for speaker:", speaker);
@@ -57,6 +60,28 @@ export default function Speakers() {
               />
             ))}
           </div>
+
+          {/* Moderators & MCs Section */}
+          {moderators.length > 0 && (
+            <div className="mt-12 sm:mt-16">
+              <h3 className="text-2xl sm:text-3xl font-semibold text-cfa-dark-blue text-center mb-8">
+                Moderators & MCs
+              </h3>
+              <div className="flex justify-center gap-6 overflow-x-auto">
+                {moderators.map((moderator) => (
+                  <SpeakerCardAnimated
+                    key={moderator.id}
+                    image={moderator.image}
+                    name={moderator.name}
+                    position={moderator.title}
+                    company={moderator.company}
+                    country={moderator.location}
+                    onViewProfile={() => openModal(moderator)}
+                  />
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* View All Speakers */}
           <div className="text-center mt-12 sm:mt-16 lg:mt-20">

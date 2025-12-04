@@ -3,6 +3,7 @@ import AboutAfIC from '../../components/AboutAfIC';
 import PastEventHighlights from '../../components/PastEventHighlights';
 import Contact from '../../components/Contact';
 import Footer from '../../components/Footer';
+import { FlashSaleFooter } from '../../components/FlashSaleFooter';
 
 export const metadata = {
   title: 'About AfIC - Africa Investment Conference 2025',
@@ -24,6 +25,7 @@ export default function AboutAfICPage() {
       <Contact />
 
       {/* Footer */}
+      <FlashSaleFooter />
       <Footer />
     </div>
   );

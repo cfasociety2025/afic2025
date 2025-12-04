@@ -2,6 +2,7 @@ import Navbar from '../../components/Navbar';
 import AboutCFAEmirates from '../../components/AboutCFAEmirates';
 import Contact from '../../components/Contact';
 import Footer from '../../components/Footer';
+import { FlashSaleFooter } from '../../components/FlashSaleFooter';
 
 export const metadata = {
   title: 'About CFA Society East Africa - AfIC 2025',
@@ -20,6 +21,7 @@ export default function AboutCFAEAPage() {
       <Contact />
 
       {/* Footer */}
+      <FlashSaleFooter />
       <Footer />
     </div>
   );

@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar';
 import TravelHero from '../components/TravelHero';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import { FlashSaleFooter } from '../components/FlashSaleFooter';
 import Image from 'next/image';
 
 export const metadata = {
@@ -356,6 +357,7 @@ export default function Travel() {
       <Contact />
 
       {/* Footer */}
+      <FlashSaleFooter />
       <Footer />
     </div>
   );

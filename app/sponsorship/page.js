@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar';
 import SponsorshipHero from '../components/SponsorshipHero';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import { FlashSaleFooter } from '../components/FlashSaleFooter';
 import Image from 'next/image';
 
 export default function Sponsorship() {
@@ -319,6 +320,7 @@ export default function Sponsorship() {
       <Contact />
 
       {/* Footer */}
+      <FlashSaleFooter />
       <Footer />
     </div>
   );
