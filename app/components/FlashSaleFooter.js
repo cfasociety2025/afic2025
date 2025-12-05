@@ -95,7 +95,7 @@ const Button = ({
   );
 };
 
-// --- Helper: Calculate Seconds Until Next Saturday 11:59 PM ---
+// --- Helper: Calculate Seconds Until Next Saturday 12:00 Noon ---
 const getSecondsUntilSaturdayMidnight = () => {
   const now = new Date();
   const target = new Date();
@@ -106,9 +106,9 @@ const getSecondsUntilSaturdayMidnight = () => {
   const daysUntilSat = (6 - day + 7) % 7; 
   
   target.setDate(now.getDate() + daysUntilSat);
-  target.setHours(23, 59, 0, 0); // Set to 11:59:00 PM
+  target.setHours(12, 0, 0, 0); // Set to 12:00:00 PM (noon)
   
-  // If today is Saturday and we are past 23:59, target next week's Saturday
+  // If today is Saturday and we are past 12:00 noon, target next week's Saturday
   if (target.getTime() < now.getTime()) {
     target.setDate(target.getDate() + 7);
   }
@@ -172,7 +172,7 @@ export const FlashSaleFooter = ({
   const handleBuy = onBuy || (() => window.open(registrationUrl, '_blank', 'noopener,noreferrer'));
   const [isVisible, setIsVisible] = useState(true);
   
-  // Initialize timer: use prop if provided, otherwise calculate time until Saturday 11:59pm
+  // Initialize timer: use prop if provided, otherwise calculate time until Saturday 12:00 noon
   const [timeLeft, setTimeLeft] = useState(() => {
     return offerEndsInSeconds !== undefined ? offerEndsInSeconds : getSecondsUntilSaturdayMidnight();
   });
