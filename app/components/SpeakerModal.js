@@ -84,7 +84,7 @@ export default function SpeakerModal({ speaker, isOpen, onClose }) {
             <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 lg:gap-12">
               {/* Speaker Image */}
               <div className="flex-shrink-0">
-                <div className="w-40 h-40 sm:w-48 sm:h-48 lg:w-56 lg:h-56 xl:w-64 xl:h-64 mx-auto sm:mx-0 bg-white rounded-lg shadow-lg flex items-center justify-center relative overflow-hidden">
+                <div className="w-40 h-40 sm:w-48 sm:h-48 lg:w-56 lg:h-56 xl:w-64 xl:h-64 mx-auto sm:mx-0 bg-white rounded-lg flex items-center justify-center relative overflow-hidden">
                   {speaker.image
                     ? <Image
                         src={speaker.image}
