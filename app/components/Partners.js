@@ -224,7 +224,7 @@ export default function Partners() {
               className="block max-w-2xl mx-auto group"
               aria-label={`Visit ${diamondSponsor.name} website`}
             >
-              <div className="relative bg-gradient-to-br from-white via-blue-50/30 to-purple-50/30 p-8 sm:p-12 lg:p-16 rounded-2xl border-2 border-blue-100 shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden group-hover:border-blue-200">
+              <div className="relative bg-gradient-to-br from-white via-blue-50/30 to-purple-50/30 p-6 sm:p-8 lg:p-10 rounded-2xl border-2 border-blue-100 shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden group-hover:border-blue-200">
                 {/* Animated gradient background */}
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-100/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
                 
@@ -233,7 +233,7 @@ export default function Partners() {
                 <div className="absolute bottom-0 right-0 w-20 h-20 border-b-4 border-r-4 border-purple-400/30 rounded-br-2xl"></div>
                 
                 <div className="relative z-10">
-                  <div className="w-full h-32 sm:h-40 lg:h-48 relative">
+                  <div className="w-full h-16 sm:h-20 lg:h-24 relative">
                     <Image
                       src={diamondSponsor.logo}
                       alt={diamondSponsor.name}
