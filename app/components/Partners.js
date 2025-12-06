@@ -63,7 +63,7 @@ export default function Partners() {
     { name: "NSSF", logo: "/sponsors/nssf.png", url: "#" },
     { name: "Sun La Vie", logo: "/sponsors/sunlavie.png", url: "#" },
     { name: "TASK", logo: "/sponsors/task.png", url: "#" },
-    { name: "Turelabs", logo: "/sponsors/turelabs.png", url: "#" },
+    { name: "Turelabs", logo: "/sponsors/ture.png", url: "#" },
     { name: "TDB Group", logo: "/sponsors/tdb.png", url: "#" },
   ];
 
