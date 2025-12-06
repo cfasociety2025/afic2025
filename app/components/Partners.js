@@ -55,16 +55,20 @@ export default function Partners() {
     url: "https://www.africafc.org/"
   };
 
+  // Silver Sponsors
+  const silverSponsors = [
+    { name: "TDB Group", logo: "/sponsors/tdb.png", url: "https://www.tdbgroup.org/" },
+    { name: "NSSF", logo: "/sponsors/nssf.PNG", url: "https://www.nssfug.org/" },
+  ];
+
   // Other Sponsors
   const sponsors = [
     { name: "Capital Savvy", logo: "/sponsors/capitalsavvy.png", url: "https://capitalsavvy.pro/" },
     { name: "Mwango Capital", logo: "/sponsors/mwango.png", url: "https://mwangocapital.com/" },
     { name: "African Allocator", logo: "/sponsors/african-allocator.PNG", url: "#" },
-    { name: "NSSF", logo: "/sponsors/nssf.PNG", url: "https://www.nssfug.org/" },
     { name: "Sun La Vie", logo: "/sponsors/sunlavie.PNG", url: "https://sunlavie.co.ke/" },
     { name: "TASK", logo: "/sponsors/task.png", url: "https://www.actuarieskenya.or.ke/" },
     { name: "Turelabs", logo: "/sponsors/ture.png", url: "https://turelabs.com/" },
-    { name: "TDB Group", logo: "/sponsors/tdb.png", url: "https://www.tdbgroup.org/" },
     { name: "EAVCA", logo: "/sponsors/eavca.png", url: "https://www.eavca.org/" }
   ];
 
@@ -247,6 +251,47 @@ export default function Partners() {
                 <div className="absolute inset-0 bg-gradient-radial from-blue-200/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
             </Link>
+          </div>
+
+          {/* Silver Sponsors Section */}
+          <div className="mb-12 sm:mb-16 lg:mb-20">
+            <div className="text-center mb-6 sm:mb-8">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-gray-50 via-slate-50 to-gray-50 rounded-full mb-4">
+                <svg className="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <span className="text-sm font-bold text-gray-700 uppercase tracking-wider">Silver Sponsors</span>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 max-w-4xl mx-auto">
+              {silverSponsors.map((sponsor, index) => (
+                <Link
+                  key={index}
+                  href={sponsor.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block group"
+                  aria-label={`Visit ${sponsor.name} website`}
+                >
+                  <div className="relative bg-white p-6 sm:p-8 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group-hover:border-gray-300">
+                    {/* Subtle shine effect */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-100/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                    
+                    <div className="relative z-10">
+                      <div className="w-full h-16 sm:h-20 relative">
+                        <Image
+                          src={sponsor.logo}
+                          alt={sponsor.name}
+                          fill
+                          className="object-contain filter group-hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
 
           {/* Other Sponsors Label */}
