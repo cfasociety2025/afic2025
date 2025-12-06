@@ -3,7 +3,6 @@ import MediaHero from '../components/MediaHero';
 import MediaContent from '../components/MediaContent';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
-import { FlashSaleFooter } from '../components/FlashSaleFooter';
 
 export const metadata = {
   title: 'Media & Newsletters - AfIC 2025',
@@ -25,7 +24,6 @@ export default function Media() {
       <Contact />
 
       {/* Footer */}
-      <FlashSaleFooter />
       <Footer />
     </div>
   );

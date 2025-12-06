@@ -3,7 +3,6 @@ import TicketsHero from '../components/TicketsHero';
 import Contact from '../components/Contact';
 import TicketsList from '../components/TicketsList';
 import Footer from '../components/Footer';
-import { FlashSaleFooter } from '../components/FlashSaleFooter';
 import Link from 'next/link';
 
 export default function Tickets() {
@@ -42,7 +41,6 @@ export default function Tickets() {
       <Contact />
 
       {/* Footer */}
-      <FlashSaleFooter />
       <Footer />
     </div>
   );

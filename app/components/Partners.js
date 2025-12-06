@@ -52,19 +52,20 @@ export default function Partners() {
   const diamondSponsor = {
     name: "Africa Finance Corporation",
     logo: "/sponsors/afc.svg",
-    url: "#"
+    url: "https://www.africafc.org/"
   };
 
   // Other Sponsors
   const sponsors = [
-    { name: "Capital Savvy", logo: "/sponsors/capitalsavvy.png", url: "#" },
-    { name: "Mwango Capital", logo: "/sponsors/mwango.png", url: "#" },
+    { name: "Capital Savvy", logo: "/sponsors/capitalsavvy.png", url: "https://capitalsavvy.pro/" },
+    { name: "Mwango Capital", logo: "/sponsors/mwango.png", url: "https://mwangocapital.com/" },
     { name: "African Allocator", logo: "/sponsors/african-allocator.png", url: "#" },
-    { name: "NSSF", logo: "/sponsors/nssf.png", url: "#" },
-    { name: "Sun La Vie", logo: "/sponsors/sunlavie.png", url: "#" },
-    { name: "TASK", logo: "/sponsors/task.png", url: "#" },
-    { name: "Turelabs", logo: "/sponsors/ture.png", url: "#" },
-    { name: "TDB Group", logo: "/sponsors/tdb.png", url: "#" },
+    { name: "NSSF", logo: "/sponsors/nssf.png", url: "https://www.nssfug.org/" },
+    { name: "Sun La Vie", logo: "/sponsors/sunlavie.png", url: "https://sunlavie.co.ke/" },
+    { name: "TASK", logo: "/sponsors/task.png", url: "https://www.actuarieskenya.or.ke/" },
+    { name: "Turelabs", logo: "/sponsors/ture.png", url: "https://turelabs.com/" },
+    { name: "TDB Group", logo: "/sponsors/tdb.png", url: "https://www.tdbgroup.org/" },
+    { name: "EAVCA", logo: "/sponsors/eavca.png", url: "https://www.eavca.org/" }
   ];
 
   const scrollRef = useRef(null);

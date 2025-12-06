@@ -7,7 +7,6 @@ import SpeakersList from '../components/SpeakersList';
 import SpeakerModal from '../components/SpeakerModal';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
-import { FlashSaleFooter } from '../components/FlashSaleFooter';
 
 export default function Speakers() {
   const [selectedSpeaker, setSelectedSpeaker] = useState(null);
@@ -37,7 +36,6 @@ export default function Speakers() {
       <Contact />
 
       {/* Footer */}
-      <FlashSaleFooter />
       <Footer />
 
       {/* Speaker Modal */}

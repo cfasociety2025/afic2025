@@ -3,7 +3,6 @@ import AgendaHero from '../components/AgendaHero';
 import AgendaSchedule from '../components/AgendaSchedule';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
-import { FlashSaleFooter } from '../components/FlashSaleFooter';
 
 export default function Agenda() {
   return (
@@ -20,7 +19,6 @@ export default function Agenda() {
       <Contact />
 
       {/* Footer */}
-      <FlashSaleFooter />
       <Footer />
     </div>
   );

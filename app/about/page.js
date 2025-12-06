@@ -4,7 +4,6 @@ import PastEventHighlights from '../components/PastEventHighlights';
 import AboutCFAEA from '../components/AboutCFAEA';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
-import { FlashSaleFooter } from '../components/FlashSaleFooter';
 
 export default function About() {
   return (
@@ -24,7 +23,6 @@ export default function About() {
       <Contact />
 
       {/* Footer */}
-      <FlashSaleFooter />
       <Footer />
     </div>
   );
