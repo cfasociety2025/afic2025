@@ -1,13 +1,16 @@
 'use client';
 
 export default function SpeakerCard({ speaker, onOpenModal }) {
+  // Check if this is the featured speaker to highlight
+  const isFeaturedHighlight = speaker.name === "PS. Abubakar Hassan Abubakar, CBS";
+  
   return (
     <div 
       className="group bg-white shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-cfa-bright-blue/30 rounded-xl cursor-pointer"
       onClick={() => onOpenModal(speaker)}
     >
       {/* Speaker Image */}
-      <div className="relative aspect-[4/5] overflow-hidden">
+      <div className={`relative aspect-[4/5] overflow-hidden ${isFeaturedHighlight ? 'ring-4 ring-cfa-bright-blue ring-inset' : ''}`}>
         {speaker.image ? (
           <img
             src={speaker.image}

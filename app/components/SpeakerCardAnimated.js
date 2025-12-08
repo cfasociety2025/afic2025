@@ -60,6 +60,9 @@ export function SpeakerCardAnimated({
   onViewProfile,
 }) {
   const [imageError, setImageError] = useState(false);
+  
+  // Check if this is the featured speaker to highlight
+  const isFeaturedHighlight = name === "PS. Abubakar Hassan Abubakar, CBS";
 
   return (
     <div
@@ -186,7 +189,7 @@ export function SpeakerCardAnimated({
             </div>
 
             {/* Profile image */}
-            <div className="relative w-[200px] h-[200px] rounded-full overflow-hidden ring-4 ring-white shadow-xl z-10">
+            <div className={`relative w-[200px] h-[200px] rounded-full overflow-hidden shadow-xl z-10 ${isFeaturedHighlight ? 'ring-4 ring-[#eab308]' : 'ring-4 ring-white'}`}>
               {imageError
                 ? <div className="w-full h-full bg-gray-100 flex items-center justify-center">
                     <Image
