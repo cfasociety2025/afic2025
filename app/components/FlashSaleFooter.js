@@ -166,7 +166,7 @@ export const FlashSaleFooter = ({
   salePrice = 100,
   currencySymbol = "$",
   onBuy,
-  offerEndsInSeconds,
+  offerEndsInSeconds, 
   registrationUrl = "https://app.glueup.com/event/156136/register/",
 }) => {
   const handleBuy = onBuy || (() => window.open(registrationUrl, '_blank', 'noopener,noreferrer'));
